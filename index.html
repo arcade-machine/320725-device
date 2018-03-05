@@ -62,43 +62,27 @@
       
       <main class="main-container">
         <h1 class="visually-hidden">Магазин "Device"</h1>
-        <h2 class="visually-hidden">Популярные товары</h2>
-            <ul class="main-container-slide1">
-                <li>
-                    <img src="selfie-stick.jpg" alt="Палка для селфи" height="10" width="10">
-                </li>
-                <li class="main-container-slide-number">
-                    <b>01</b>
-                </li>
-                <li>
-                    <ul>
-                        <li class="main-container-slide-head">
-                            <h3>Делай селфи,как Бен Стиллер!</h3>
-                        </li>
-                        <li class="main-container-slide-info">
-                            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-                            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                        </li>
-                        <li class="main-container-slide-item-spec">
-                            <table>
-                                <tr class="main-container-slide-item-spec-value">
-                                    <td>8,5 м</td>
-                                    <td>5 кг</td>
-                                    <td>Карбон</td>
-                                </tr>
-                                <tr class="main-container-slide-item-spec-name">
-                                    <td>Длина палки</td>
-                                    <td>Вес палки</td>
-                                    <td>Материал</td>
-                                </tr>
-                            </table>
-                        </li>
-                        <li class="main-container-slide-more-info">
-                            <a class="button" href="/catalog.html">ПОДРОБНЕЕ</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <section class="main-container-slide1">
+                <h2 class="visually-hidden">Популярные товары</h2>
+                <img src="selfie-stick.jpg" alt="Палка для селфи" height="10" width="10">
+                <b class="main-container-slide-number">01</b>
+                <h3 class="main-container-slide-head">Делай селфи,как Бен Стиллер!</h3>
+                <p class="main-container-slide-info">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <table class="main-container-slide-item-spec">
+                    <tr class="main-container-slide-item-spec-value">
+                        <td>8,5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                    </tr>
+                    <tr class="main-container-slide-item-spec-name">
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                    </tr>
+                </table>
+                <a class="button main-container-slide-more-info" href="/catalog.html">Подробнее</a>
+            </section>
           <!--Второй и третий слайды доделаю после утвердения первого
           <section class="main-container-slide2">
             <ul>
@@ -194,15 +178,22 @@
               </ul>
           <section class="main-container-services">
               <h2 class="visually-hidden">Сервисы</h2>
-              <ul class="main-container-services-delivery">
-                  <li class="main-container-services-navigation">
+              <ul class="main-container-services-navigation">
+                  <li>
                       <a class="button" href="#">Доставка</a>
                   </li>
-                  <li class="main-container-services-info">
-                      <h3 id="delivery">Доставка</h3>
-                      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                      <i class="main-container-services-icon"></i>
+                  <li>
+                      <a class="button" href="#">Гарантия</a>
+                  </li>
+                  <li>
+                      <a class="button" href="#">Кредит</a>
+                  </li>
               </ul>
+              <div class="main-container-services-info">
+                  <h3 id="delivery">Доставка</h3>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    <i class="main-container-services-info-icon"></i>
+              </div>
               <!--Остальные два слайда доделаю после утверждения первого
                <ul class="main-container-services-warranty">
                   <li class="main-container-services-navigation">
@@ -233,34 +224,31 @@
           </section>
               <ul class="main-container-manufacturer">
                   <li>
-                      <a href="/catalog#dji.html">
+                      <a href="/catalog#dji.html" class="main-container-manufacturer-logo">
                           <img src="dji.jpg" alt="dji" width="10" height="10">
                       </a>
                   </li>
                   <li>
-                      <a href="/catalog#sp-gadgets.html">
+                      <a href="/catalog#sp-gadgets.html" class="main-container-manufacturer-logo">
                           <img src="sp-gadgets.jpg" alt="SP gadgets" width="10" height="10">
                       </a>
                   </li>
                   <li>
-                      <a href="/catalog#gopro.html">
+                      <a href="/catalog#gopro.html" class="main-container-manufacturer-logo">
                           <img src="gopro.jpg" alt="Go pro" width="10" height="10">
                       </a>
                   </li>
                   <li>
-                      <a href="/catalog#vive.html">
+                      <a href="/catalog#vive.html" class="main-container-manufacturer-logo">
                           <img src="vive.jpg" alt="vive" width="10" height="10">
                       </a>
                   </li>
               </ul>
           <section class="main-container-info">
-              <ul class="main-container-info-about_us">
-                  <li>
-                    <h2>О нас</h2>
+              <div class="main-container-info-about_us">
+                    <h3>О нас</h3>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                  </li>
-                  <li>
                       <ul class="main-container-about-companys">
                           <li>
                               <a href="https://www.dellin.ru/">Деловые линии</a>
@@ -272,24 +260,15 @@
                               <a href="https://www.jde.ru/">ЖелДорЭкспедиция</a>
                           </li>
                       </ul>
-                  </li>
-                  <li>
-                      <a class="button" href="about_us.html">ПОДРОБНЕЕ О НАС</a>
-                  </li>
-              </ul>
-              <ul class="main-container-info-contacts">
-                  <li>
-                      <h2 id="contacts">Контакты</h2>
+                      <a class="button" href="about_us.html">Подробнее о нас</a>
+              </div>
+              <div class="main-container-info-contacts">
+                      <h3 id="contacts">Контакты</h3>
                       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                  </li>
-                  <!--Здесь будет карта
-                  <li>Map</li>
-                  -->
-                  <li>
-                      <a class="button" href="#write_us">НАПИШИТЕ НАМ</a>
-                  </li>
+                  <!--Здесь будет карта-->
+                      <a class="button" href="#write_us">Напишите нам</a>
                   <!--Pop-up для окна "напишите нам"
-                <div class="main-container-contacts-write_us">            
+                <div class="main-container-contacts-write_us">        
                     <ul>
                       <li>
                           <p>Ваше имя:</p>
@@ -308,70 +287,64 @@
                     <form class="main-container-contacts-write_us-button-exit">x</form>
                 </div>
                 -->
-              </ul>
+              </div>
           </section>
       </main>
       
       <footer class="main-footer">
-          <ul class="main-footer-logo/info">
-              <li>
-                  <a class="main-footer-logo">
-                        <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
-                  </a>
-              </li>
-              <li>
-                  <p>г. Москва, ул. Строителей, 15</p>
-              </li>
-          </ul>
-          <ul class="main-footer-user_block">
-             <li>
-                <form class="main-footer-user_block-log_in">Войти</form>
-             </li>
-             <li>
-                <form class="main-footer-user_block-match">Сравнить</form>
-             </li>
-             <li>
-                <form class="main-footer-user_block-cart">Корзина</form>
-             </li>
-          </ul>
-          <ul class="main-footer-navigation">
-             <li>
-                 <a href="#delivery">Доставка</a>
-             </li>
-             <li>
-                 <a href="#warranty">Гарантия</a>
-             </li>
-             <li>
-                 <a href="#contacts">Контакты</a>
-             </li>
-          </ul>
-          <ul class="main-footer-social">                
-             <li>
-                 <a class="main-footer-social-button" href="fb.com">
-                    <i></i>
-                 </a>
-             </li>
-             <li>
-                 <a class="main-footer-social-button" href="instagram.com">
-                    <i></i>
-                 </a>
-             </li>
-             <li>
-                 <a class="main-footer-social-button" href="twitter.com">
-                     <i></i>
-                 </a>
-             </li>
-          </ul>
-          <ul class="main-footer-academy_block">
-              <li>
-                   <p>Тел.: +7 (495) 495-95-95</p>
-              </li>
-              <li>
-                  <a class="main-footer-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-                      <i></i>
-                  </a>
-              </li>
-          </ul>
+          <section class="main-footer-logo_userblock">
+                <a class="main-footer-logo">
+                    <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
+                </a>
+                <ul class="main-footer-user_block">
+                    <li>
+                        <form class="main-footer-user_block-log_in">Войти</form>
+                    </li>
+                    <li>
+                        <form class="main-footer-user_block-match">Сравнить</form>
+                    </li>
+                    <li>
+                        <form class="main-footer-user_block-cart">Корзина</form>
+                    </li>
+                </ul>
+          </section>
+          <section class="main-footer-navigation">
+                <p>г. Москва, ул. Строителей, 15</p>
+                <p>Тел.: +7 (495) 495-95-95</p>
+                <ul>
+                   <li>
+                       <a href="#delivery">Доставка</a>
+                   </li>
+                   <li>
+                       <a href="#warranty">Гарантия</a>
+                   </li>
+                   <li>
+                       <a href="#contacts">Контакты</a>
+                   </li>
+                </ul>
+          </section>
+          <section class="main-footer-social">   
+             <ul>
+                <li>
+                    <a class="main-footer-social-button" href="fb.com">
+                        <i></i>
+                    </a>
+                </li>
+                 <li>
+                     <a class="main-footer-social-button" href="instagram.com">
+                        <i></i>
+                     </a>
+                 </li>
+                 <li>
+                     <a class="main-footer-social-button" href="twitter.com">
+                         <i></i>
+                     </a>
+                 </li>
+             </ul>
+             <a class="main-footer-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+                 <i></i>
+             </a>
+          </section>
       </footer>
   </body>
 </html>
