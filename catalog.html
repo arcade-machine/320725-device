@@ -63,29 +63,17 @@
       </header>
       
       <main class="main-container">
-          <ul class="breadcrumbs">
-            <li>
+          <div class="breadcrumbs">
                 <h1 class="page-title">Моноподы для селфи</h1>
-            </li>
-            <li>
                 <a href="/index.html">Главная</a>
-            </li>
-            <li>
                 <a href="/catalog.html">Каталог товара</a>
-            </li>
-            <li>
                 <a href="#">Моноподы для селфи</a>
-            </li>
-          </ul>
-          <ul class="main-container-sorting">
-              <li>
-                  <h3>ФИЛЬТР:</h3>
-              </li>
-              <li>
-                  <h3>СОРТИРОВКА</h3>
-              </li>
-              <li class="main-container-sorting-criterion">
-                  <ul>
+          </div>
+          <section class="main-container-sorting">
+                <h3>ФИЛЬТР:</h3>
+                <h3>СОРТИРОВКА</h3>
+                <div class="main-container-sorting-criterion">
+                   <ul>
                       <li>
                           <form>По цене</form>
                       </li>
@@ -102,16 +90,13 @@
                           <form>DOWN</form>
                       </li>
                   </ul>           
-              </li>
-            </ul>
-            <ul class="main-container-search">
-                 <li>
+               </div>
+            </section>
+            <section class="main-container-search">
                      <p>Стоимость</p>
                      <!--Форма диапазона цены-->
-                 </li>
-                 <li>
-                      <h3>Цвет</h3>
-                      <ul>
+                      <p>Цвет</p>
+                      <ul class="main0container-search-colour">
                           <li>
                               <form>Черный</form>
                           </li>
@@ -128,9 +113,7 @@
                                <form>Розовый</form>
                           </li>
                       </ul>
-                  </li>
-                  <li>
-                      <h3>Bluetooth</h3>
+                      <p>Bluetooth</p>
                       <ul>
                           <li>
                                <form>Есть</form>
@@ -139,12 +122,8 @@
                                 <form>Нет</form>
                           </li>
                       </ul>
-                  </li>
-                  <li>
                       <a class="button" href="#">ПОКАЗАТЬ</a>
-                  </li>
-             </ul>
-
+             </section>
           <section class="main-container-items">
               <h2 class="visually-hidden">Список товаров</h2>
                 <ul class="main-container-items-list">
@@ -197,85 +176,81 @@
                     </li>
                 </ul>
           </section>
-          <ul class="pagination">
-            <li>
-                <a class="pagination-item pagination-item-current">1</a>
-            </li>
-            <li>
-                <a class="pagination-item" href="#">2</a>
-            </li>
-            <li>
-                <a class="pagination-item" href="#">3</a>
-            </li>
-            <li>
-                <a class="pagination-item-back" href="#">НАЗАД</a>
-            </li>
-              <li>
-                <a class="pagination-item-back" href="#">ВПЕРЕД</a>
-            </li>
-           </ul>
+          <div class="pagination">
+             <ul>
+                 <li>
+                    <a class="pagination-item pagination-item-current">1</a>
+                </li>
+                <li>
+                    <a class="pagination-item" href="#">2</a>
+                </li>
+                <li>
+                    <a class="pagination-item" href="#">3</a>
+                </li>
+                <li>
+                    <a class="pagination-item-back" href="#">НАЗАД</a>
+                </li>
+                <li>
+                    <a class="pagination-item-back" href="#">ВПЕРЕД</a>
+                </li>
+              </ul>
+           </div>
       </main>
 
       <footer class="main-footer">
-          <ul class="main-footer-logo/info">
-              <li>
-                  <a class="main-footer-logo">
-                        <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
-                  </a>
-              </li>
-              <li>
-                  <p>г. Москва, ул. Строителей, 15</p>
-              </li>
-          </ul>
-          <ul class="main-footer-user_block">
-             <li>
-                <form class="main-footer-user_block-log_in">Войти</form>
-             </li>
-             <li>
-                <form class="main-footer-user_block-match">Сравнить</form>
-             </li>
-             <li>
-                <form class="main-footer-user_block-cart">Корзина</form>
-             </li>
-          </ul>
-          <ul class="main-footer-navigation">
-             <li>
-                 <a href="#delivery">Доставка</a>
-             </li>
-             <li>
-                 <a href="#warranty">Гарантия</a>
-             </li>
-             <li>
-                 <a href="#contacts">Контакты</a>
-             </li>
-          </ul>
-          <ul class="main-footer-social">                
-             <li>
-                 <a class="main-footer-social-button" href="fb.com">
-                    <i></i>
-                 </a>
-             </li>
-             <li>
-                 <a class="main-footer-social-button" href="instagram.com">
-                    <i></i>
-                 </a>
-             </li>
-             <li>
-                 <a class="main-footer-social-button" href="twitter.com">
-                     <i></i>
-                 </a>
-             </li>
-          </ul>
-          <ul class="main-footer-academy_block">
-              <li>
-                   <p>Тел.: +7 (495) 495-95-95</p>
-              </li>
-              <li>
-                  <a class="main-footer-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-                      <i></i>
-                  </a>
-              </li>
-          </ul>
+          <section class="main-footer-logo_userblock">
+                <a class="main-footer-logo">
+                    <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
+                </a>
+                <ul class="main-footer-user_block">
+                    <li>
+                        <form class="main-footer-user_block-log_in">Войти</form>
+                    </li>
+                    <li>
+                        <form class="main-footer-user_block-match">Сравнить</form>
+                    </li>
+                    <li>
+                        <form class="main-footer-user_block-cart">Корзина</form>
+                    </li>
+                </ul>
+          </section>
+          <section class="main-footer-navigation">
+                <p>г. Москва, ул. Строителей, 15</p>
+                <p>Тел.: +7 (495) 495-95-95</p>
+                <ul>
+                   <li>
+                       <a href="#delivery">Доставка</a>
+                   </li>
+                   <li>
+                       <a href="#warranty">Гарантия</a>
+                   </li>
+                   <li>
+                       <a href="#contacts">Контакты</a>
+                   </li>
+                </ul>
+          </section>
+          <section class="main-footer-social">   
+             <ul>
+                <li>
+                    <a class="main-footer-social-button" href="fb.com">
+                        <i></i>
+                    </a>
+                </li>
+                 <li>
+                     <a class="main-footer-social-button" href="instagram.com">
+                        <i></i>
+                     </a>
+                 </li>
+                 <li>
+                     <a class="main-footer-social-button" href="twitter.com">
+                         <i></i>
+                     </a>
+                 </li>
+             </ul>
+             <a class="main-footer-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+                 <i></i>
+             </a>
+          </section>
       </footer>
   </body>
 </html>
