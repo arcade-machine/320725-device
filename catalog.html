@@ -8,26 +8,30 @@
       <header class="main-header">
         <a href="index.html">
             <img class="main-header-logo" src="device-logo.jpg" alt="Device" width="10" height="10">
-        </a>
-                <!--Размеры (здесь и далее) пока левые-->
-        <ul class="main-header-user_block">
-            <li class="main-header-user_block-search">
+        </a>        
+        <ul class="user_block">
+            <li class="user_block-search">
+                <i class="search"></i>
                 <input>
             </li>
-            <li class="main-header-user_block-log_in">
-                <form>Войти</form>
+            <li class="user_block-log_in">
+                <i class="log-in"></i>
+                <a href="#">Войти</a>
             </li>
-            <li class="main-header-user_block-match">
-                <form>Сравнить</form>
+            <li class="user_block-match">
+                <i class="match"></i>
+                <a href="#">Сравнить</a>
             </li>
-            <li  class="main-header-user_block-cart">
-                <form>Корзина</form>
+            <li  class="user_block-cart">
+                <i class="cart"></i>
+                <a href="#">Корзина</a>
             </li>
-            </ul>
+        </ul>
         <nav class="main-navigation">
             <ul class="main-navigation-menu">
                 <li class="main-navigation-menu-catalog">
                     <button>Каталог товаров</button>
+                    <i class="catalog-plus"></i>
                 </li>
                 <li>
                     <a href="#delivery">Доставка</a>
@@ -63,84 +67,101 @@
       </header>
       
       <main class="main-container">
-          <div class="breadcrumbs">
+          <section class="breadcrumbs">
                 <h1 class="page-title">Моноподы для селфи</h1>
                 <a href="/index.html">Главная</a>
                 <a href="/catalog.html">Каталог товара</a>
                 <a href="#">Моноподы для селфи</a>
-          </div>
+          </section>
           <section class="main-container-sorting">
                 <h3>ФИЛЬТР:</h3>
                 <h3>СОРТИРОВКА</h3>
                 <div class="main-container-sorting-criterion">
                    <ul>
                       <li>
-                          <form>По цене</form>
+                          <a href="#">По цене</a>
                       </li>
                       <li>
-                          <form>По типу</form>
+                          <a href="#">По типу</a>
                       </li>
                       <li>
-                          <form>По популярности</form>
+                          <a href="#">По популярности</a>
                       </li>
-                      <li class="arrows">
-                          <form>UP</form>
+                    </ul> 
+              </div>
+              <div class="arrows">
+                  <ul>                  
+                      <li>
+                          <i class="up"></i>
                       </li>
-                      <li class="arrows">
-                          <form>DOWN</form>
-                      </li>
-                  </ul>           
+                      <li>
+                          <i class="down"></i>
+                      </li>    
+                  </ul>
                </div>
             </section>
             <section class="main-container-search">
-                     <p>Стоимость</p>
-                     <!--Форма диапазона цены-->
-                      <p>Цвет</p>
-                      <ul class="main0container-search-colour">
-                          <li>
-                              <form>Черный</form>
-                          </li>
-                          <li>
-                              <form>Белый</form>
-                          </li>
-                          <li>
-                              <form>Синий</form>
-                          </li>
-                          <li>
-                              <form>Красный</form>
-                          </li>
-                          <li>                     
-                               <form>Розовый</form>
-                          </li>
-                      </ul>
-                      <p>Bluetooth</p>
+                <div class="search-price">
+                     <b>Стоимость</b>
+                     <!--Lиапазон цены-->
+                </div>
+                <div class="search-color">
+                    <b>Цвет</b>
+                    <ul class="main-container-search-color">
+                        <li>
+                            <i class="check-box"></i>
+                            <p>Черный</p>
+                        </li>
+                        <li>
+                            <i class="check-box"></i>
+                            <p>Белый</p>
+                        </li>
+                        <li>
+                            <i class="check-box"></i>
+                            <p>Синий</p>
+                        </li>
+                        <li>
+                            <i class="check-box"></i>
+                            <p>Красный</p>
+                        </li>
+                        <li>
+                            <i class="check-box"></i>
+                            <p>Розовый</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bluetooth">
+                      <b>Bluetooth</b>
                       <ul>
                           <li>
-                               <form>Есть</form>
+                              <i class="radio"></i>
+                              <p>Есть</p>
                           </li>
                           <li>
-                                <form>Нет</form>
+                              <i class="radio"></i>
+                              <p>Нет</p>
                           </li>
                       </ul>
-                      <a class="button" href="#">ПОКАЗАТЬ</a>
-             </section>
-          <section class="main-container-items">
-              <h2 class="visually-hidden">Список товаров</h2>
+                </div>
+                <a class="button" href="#">ПОКАЗАТЬ</a>
+              </section>
+              <section class="main-container-items">
+                <h2 class="visually-hidden">Список товаров</h2>
                 <ul class="main-container-items-list">
                     <li>
-                        <article>
-                            <img src="newby-selfie-stick.jpg" alt="Любительская селфи палка" width="10" height="10">
+                        <article class="items-list-one">
+                            <img src="/img/images/catalog-item-one.jpg" alt="Любительская селфи палка" width="360" height="380">
                             <h3>Любительская селфи-палка</h3>
                             <b>500 руб.</b>
-                            <div class="main-container-items-list-when_hover">
+                             <div class="main-container-items-list-when_hover">
                                 <a class="button" href="#">В КОРЗИНУ</a>
                                 <p>Добавить к сравнению</p>
                             </div>
                         </article>
                     </li>
                     <li>
-                        <article>
-                            <img src="pro-selfie-stick.jpg" alt="Профессиональная селфи палка" width="10" height="10">
+                        <article class="items-list-two">
+                            <img src="/img/images/catalog-item-two.jpg" alt="Профессиональная селфи палка" width="360" height="380">
                             <h3>Профессиональная селфи-палка</h3>
                             <b>1 500 руб.</b>
                             <div class="main-container-items-list-when_hover">
@@ -150,8 +171,8 @@
                         </article>
                     </li>
                     <li>
-                        <article>
-                            <img src="unsink-selfie-stick.jpg" alt="Непотопляемая селфи палка" width="10" height="10">
+                        <article class="items-list-three">
+                            <img src="/img/images/catalog-item-three.jpg" alt="Непотопляемая селфи палка" width="360" height="380">
                             <h3>Непотопляемая селфи-палка</h3>
                             <b>2 500 руб.</b>
                             <div class="main-container-items-list-when_hover">
@@ -161,13 +182,13 @@
                         </article>
                     </li>
                     <li>
-                        <article>
-                            <img src="follow_me-selfie-stick.jpg" alt="Непотопляемая селфи палка" width="10" height="10">
+                        <article class="items-list-four">
+                            <img src="/img/images/catalog-item-four.jpg" alt="Непотопляемая селфи палка" width="360" height="380">
                             <div class="main-container-items-list-new">
                                 <p>NEW</p>
                             </div>
                             <h3>Селфи-палка "Следуй за мной"</h3>
-                            <b>4 900 руб.</b>
+                             <b>4 900 руб.</b>
                             <div class="main-container-items-list-when_hover">
                                 <a class="button" href="#">В КОРЗИНУ</a>
                                 <p>Добавить к сравнению</p>
@@ -175,8 +196,8 @@
                         </article>
                     </li>
                 </ul>
-          </section>
-          <div class="pagination">
+            </section>
+            <div class="pagination">
              <ul>
                  <li>
                     <a class="pagination-item pagination-item-current">1</a>
@@ -198,18 +219,21 @@
       </main>
 
       <footer class="main-footer">
-          <section class="main-footer-logo_userblock">
+          <section class="main-footer-userblock">
                 <a class="main-footer-logo">
                     <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
                 </a>
                 <ul class="main-footer-user_block">
                     <li>
+                        <i class="log_in"></i>
                         <form class="main-footer-user_block-log_in">Войти</form>
                     </li>
                     <li>
+                        <i class="match"></i>
                         <form class="main-footer-user_block-match">Сравнить</form>
                     </li>
                     <li>
+                        <i class="cart"></i>
                         <form class="main-footer-user_block-cart">Корзина</form>
                     </li>
                 </ul>
@@ -232,23 +256,23 @@
           <section class="main-footer-social">   
              <ul>
                 <li>
-                    <a class="main-footer-social-button" href="fb.com">
-                        <i></i>
+                    <a href="fb.com">
+                        <i class="facebook"></i>
                     </a>
                 </li>
                  <li>
-                     <a class="main-footer-social-button" href="instagram.com">
-                        <i></i>
+                     <a href="instagram.com">
+                        <i class="instagram"></i>
                      </a>
                  </li>
                  <li>
-                     <a class="main-footer-social-button" href="twitter.com">
-                         <i></i>
+                     <a href="twitter.com">
+                         <i class="twitter"></i>
                      </a>
                  </li>
              </ul>
-             <a class="main-footer-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-                 <i></i>
+             <a href="https://htmlacademy.ru/intensive/htmlcss">
+                 <i class="academy"></i>
              </a>
           </section>
       </footer>
