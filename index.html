@@ -14,15 +14,15 @@
             </li>
             <li class="user_block-log_in">
                 <i class="log-in"></i>
-                <a href="#">Войти</a>
+                <a class="login-link" href="login.html">Войти</a>
             </li>
             <li class="user_block-match">
                 <i class="match"></i>
-                <a href="#">Сравнить</a>
+                <a class="match-link" href="match.html">Сравнить</a>
             </li>
             <li  class="user_block-cart">
                 <i class="cart"></i>
-                <a href="#">Корзина</a>
+                <a class="cart-link" href="cart.html">Корзина</a>
             </li>
         </ul>
         <nav class="main-navigation">
@@ -234,28 +234,29 @@
               <div class="main-container-info-contacts">
                       <h3 id="contacts">Контакты</h3>
                       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                      <img src="/img/images/map.jpg" width="560" height="222" alt="Карта">
+                      <p>
+                          <img src="/img/images/map.jpg" width="560" height="222" alt="Адрес магазина">
+                      </p>
+                      <button class="modal-close" type="button">Закрыть</button>
                       <a class="button" href="#write_us">Напишите нам</a>
-                  <!--Pop-up для окна "напишите нам"
-                <div class="main-container-contacts-write_us">        
-                    <ul>
-                      <li>
-                          <p>Ваше имя:</p>
-                      </li>
-                      <li>
-                          <p>Ваш e-mail:</p>
-                      </li>
-                      <li>
-                          <p>Текст письма:</p>
-                      </li>
-                    </ul>
-                    <form class="main-container-contacts-write_us-name">Имя Фамилия</form>
-                    <form class="main-container-contacts-write_us-email">email@example.com</form>
-                    <form class="main-container-contacts-write_us-text">В свободной форме</form>
-                    <a class="class="button"">ОТПРАВИТЬ</a>
-                    <form class="main-container-contacts-write_us-button-exit">x</form>
-                </div>
-                -->
+               <section class="write_us">
+                  <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+                      <p class="write_us-item">
+                          <label for="write_us-name-box">Ваше имя:</label>
+                          <input id="write_us-name-box" type="text" name="write_us-user-name" placeholder="Имя Фамилия">
+                      </p>
+                      <p class="write_us-item">
+                          <label for="write_us-email-box">Ваш email:</label>
+                          <input id="write_us-email-box" type="email" name="write_us-email" placeholder="email@expample.com">
+                      </p>
+                      <p class="write_us-item">
+                          <label for="write_us-letter-box">Текст письма:</label>
+                          <textarea id="write_us-letter-box" name="write_us-letter" rows="5" placeholder="В свободной форме"></textarea>
+                      </p>
+                      <button class="button" type="submit">Отправить</button>
+                  </form>
+                  <button class="modal-close" type="button">Закрыть</button>
+                </section>
               </div>
           </section>
       </main>
@@ -266,17 +267,17 @@
                     <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
                 </a>
                 <ul class="main-footer-user_block">
-                    <li>
-                        <i class="log_in"></i>
-                        <form class="main-footer-user_block-log_in">Войти</form>
+                    <li class="footer-user_block-log_in">
+                        <i class="log-in"></i>
+                        <a class="footer-login-link" href="login.html">Войти</a>
                     </li>
-                    <li>
+                    <li class="user_block-match">
                         <i class="match"></i>
-                        <form class="main-footer-user_block-match">Сравнить</form>
+                        <a class="footer-match-link" href="match.html">Сравнить</a>
                     </li>
-                    <li>
+                    <li  class="user_block-cart">
                         <i class="cart"></i>
-                        <form class="main-footer-user_block-cart">Корзина</form>
+                        <a class="footer-cart-link" href="cart.html">Корзина</a>
                     </li>
                 </ul>
           </section>
