@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин "Device"</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
-        <img class="main-header-logo" src="device-logo.jpg" alt="Device" width="10" height="10">
+        <p class="logo-header">Device</p>
         <ul class="user_block">
             <li class="user_block-search">
                 <i class="search"></i>
-                <input>
+                <form>
+                    <input type="text" placeholder="Поиск по сайту">
+                    <button class="search-button" type="submit">Найти</button>
+                </form>
             </li>
             <li class="user_block-log_in">
                 <i class="log-in"></i>
@@ -28,7 +33,7 @@
         <nav class="main-navigation">
             <ul class="main-navigation-menu">
                 <li class="main-navigation-menu-catalog">
-                    <button>Каталог товаров</button>
+                    Каталог товаров
                     <i class="catalog-plus"></i>
                 </li>
                 <li>
@@ -66,12 +71,13 @@
       
       <main class="main-container">
         <h1 class="visually-hidden">Магазин "Device"</h1>
-          <ul>
-              <li>
-                  <section class="main-container-slide_one">
-                      <img src="/img/images/slider-1.png" alt="Палка для селфи" height="486" width="384">
+        <section class="main-container-slider">
+            <ul>
+                <li>
+                    <div class="slide-one">
+                      <img src="img/images/slider-1.png" alt="Палка для селфи" height="486" width="384">
                       <div class="slide_one">
-                          <b class="slide-number">01</b>
+                          <b>01</b>
                           <h2 class="slide-head">Делай селфи,как Бен Стиллер!</h2>
                           <p class="slide-info">Самая длинная палка для селфи доступна в нашем магазине.<br>
                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -89,11 +95,11 @@
                            </table>
                            <a class="button slide-more-info" href="/catalog.html">Подробнее</a>
                        </div>
-                    </section>
-              </li>
-              <li>
-                  <section class="main-container-slide_two">
-                      <img src="/img/images/slider-2.png" alt="Фитнес-браслет" height="485" width="345">
+                    </div>
+                  </li>
+                  <li>
+                  <div class="slide_two">
+                      <img src="img/images/slider-2.png" alt="Фитнес-браслет" height="485" width="345">
                       <div class="slide_two">
                           <b class="slide-number">02</b>
                           <h2 class="slide-head">Худеем правильно!</h2>
@@ -108,11 +114,11 @@
                           </table>
                           <a class="button slide-more-info" href="/catalog.html">Подробнее</a>
                        </div>
-                    </section>
-              </li>
-              <li>
-                   <section class="slide_three">
-                      <img src="/img/images/slider-3.png" alt="Фитнес-браслет" height="334" width="526">
+                    </div>
+                  </li>
+                  <li>
+                   <div class="slide_three">
+                      <img src="img/images/slider-3.png" alt="Фитнес-браслет" height="334" width="526">
                       <div class="slide_three">
                           <b class="slide-number">03</b>
                           <h2 class="slide-head">Порхает как бабочка, жалит как пчела!</h2>
@@ -129,9 +135,10 @@
                           </table>
                           <a class="button slide-more-info" href="/catalog.html">Подробнее</a>
                        </div>
-                    </section>
-              </li>
-          </ul>
+                    </div>
+                  </li>
+              </ul>
+          </section>
           <ul class="popular">
               <li>
                   <h2 class="visually-hidden">Каталог товаров</h2>
@@ -194,31 +201,31 @@
           <ul class="manufacturer">
               <li>
                   <a href="/catalog#dji.html">
-                      <i class="dji"></i>
+                      <img src="img/images/logo-dji.png" alt="dji" class="dji">
                   </a>
               </li>
               <li>
                    <a href="/catalog#sp-gadgets.html">
-                       <i class="sp-gadgets"></i>
+                       <img src="img/images/logo-sp_gadgets.png" alt="sp_gadgets" class="sp-gadgets">
                    </a>
               </li>
               <li>
                    <a href="/catalog#gopro.html" class="main-container-manufacturer-logo">
-                       <i class="go-pro"></i>
+                       <img src="img/images/logo-go_pro.png" alt="Go-pro" class="go-pro">
                    </a>
               </li>
               <li>
                    <a href="/catalog#vive.html">
-                       <i class="vive"></i>
+                       <img src="img/images/logo-vive.png" alt="Vive" class="vive">
                    </a>
               </li>
           </ul>
           <section class="main-container-info">
-              <div class="main-container-info-about_us">
+              <div class="info-about_us">
                     <h3>О нас</h3>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                      <ul class="main-container-about-companys">
+                      <ul class="about-companys">
                           <li>
                               <a href="https://www.dellin.ru/">Деловые линии</a>
                           </li>
@@ -231,15 +238,15 @@
                       </ul>
                       <a class="button" href="about_us.html">Подробнее о нас</a>
               </div>
-              <div class="main-container-info-contacts">
+              <div class="info-contacts">
                       <h3 id="contacts">Контакты</h3>
                       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                       <p>
-                          <img src="/img/images/map.jpg" width="560" height="222" alt="Адрес магазина">
+                          <img src="img/images/map.jpg" width="560" height="222" alt="Адрес магазина">
                       </p>
                       <button class="modal-close" type="button">Закрыть</button>
                       <a class="button" href="#write_us">Напишите нам</a>
-               <section class="write_us">
+               <div class="write_us">
                   <form class="filter" method="post" action="https://echo.htmlacademy.ru">
                       <p class="write_us-item">
                           <label for="write_us-name-box">Ваше имя:</label>
@@ -256,18 +263,16 @@
                       <button class="button" type="submit">Отправить</button>
                   </form>
                   <button class="modal-close" type="button">Закрыть</button>
-                </section>
+                </div>
               </div>
           </section>
       </main>
       
       <footer class="main-footer">
-          <section class="main-footer-userblock">
-                <a class="main-footer-logo">
-                    <img src="device-logo-footer.jpg" alt="Device" width="10" height="10">
-                </a>
-                <ul class="main-footer-user_block">
-                    <li class="footer-user_block-log_in">
+          <section class="footer-userblock">
+                <p class="logo-footer">Device</p>
+                <ul class="footer-user_block">
+                    <li class="user_block-log_in">
                         <i class="log-in"></i>
                         <a class="footer-login-link" href="login.html">Войти</a>
                     </li>
@@ -281,7 +286,7 @@
                     </li>
                 </ul>
           </section>
-          <section class="main-footer-navigation">
+          <section class="footer-navigation">
                 <p>г. Москва, ул. Строителей, 15</p>
                 <p>Тел.: +7 (495) 495-95-95</p>
                 <ul>
@@ -296,7 +301,7 @@
                    </li>
                 </ul>
           </section>
-          <section class="main-footer-social">   
+          <section class="footer-social">   
              <ul>
                 <li>
                     <a href="fb.com">
