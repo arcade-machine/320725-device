@@ -8,44 +8,41 @@
   </head>
   <body>
       <header class="main-header">
-        <p class="logo-header">Device</p>
-        <ul class="user_block">
-            <li class="user_block-search">
+<!--        <p class="logo-header">Device</p>-->
+        <div class="user_block">
+            <div class="user_block-search">
                 <i class="search"></i>
                 <form>
                     <input type="text" placeholder="Поиск по сайту">
                     <button class="search-button" type="submit">Найти</button>
                 </form>
-            </li>
-            <li class="user_block-log_in">
+            </div>
+            <div class="user_block-log_in">
                 <i class="log-in"></i>
                 <a class="login-link" href="login.html">Войти</a>
-            </li>
-            <li class="user_block-match">
+            </div>
+            <div class="user_block-match_cart">
                 <i class="match"></i>
                 <a class="match-link" href="match.html">Сравнить</a>
-            </li>
-            <li  class="user_block-cart">
                 <i class="cart"></i>
                 <a class="cart-link" href="cart.html">Корзина</a>
-            </li>
-        </ul>
+            </div>
+        </div>
         <nav class="main-navigation">
             <ul class="main-navigation-menu">
                 <li class="main-navigation-menu-catalog">
                     Каталог товаров
                     <i class="catalog-plus"></i>
                 </li>
-                <li>
+                <li class="main-navigation-menu-wrapper">
                     <a href="#delivery">Доставка</a>
-                </li>
-                <li>
                     <a href="#warranty">Гарантия</a>
                 </li>
-                <li>
+                <li class="main-navigation-menu-contacts">
                     <a href="#contacts">Контакты</a>
                 </li>
             </ul>
+<!--пока уберу
             <ul class="main-navigation-cataloglist">
                 <li>
                     <a href="/catalog/virtual-reality.html">Виртуальная реальность</a>
@@ -66,21 +63,23 @@
                     <a href="/catalog/smart-quadrupter.html">Квадрокоптеры</a>
                 </li>
              </ul>
+-->
         </nav>
       </header>
       
       <main class="main-container">
-        <h1 class="visually-hidden">Магазин "Device"</h1>
+        <!--<h1 class="visually-hidden">Магазин "Device"</h1>-->
         <section class="main-container-slider">
             <ul>
                 <li>
                     <div class="slide-one">
                       <img src="img/images/slider-1.png" alt="Палка для селфи" height="486" width="384">
                       <div class="slide_one">
-                          <b>01</b>
+                        <!--<b>01</b>-->
                           <h2 class="slide-head">Делай селфи,как Бен Стиллер!</h2>
                           <p class="slide-info">Самая длинная палка для селфи доступна в нашем магазине.<br>
                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                          <a class="button slide-more-info" href="/catalog.html">Подробнее</a>
                           <table class="slide-item-spec">
                               <tr class="slide-item-spec-value">
                                   <td>8,5 м</td>
@@ -93,10 +92,11 @@
                                   <td>Материал</td>
                               </tr>
                            </table>
-                           <a class="button slide-more-info" href="/catalog.html">Подробнее</a>
+                           
                        </div>
                     </div>
                   </li>
+<!--слайды пока убрал
                   <li>
                   <div class="slide_two">
                       <img src="img/images/slider-2.png" alt="Фитнес-браслет" height="485" width="345">
@@ -137,12 +137,13 @@
                        </div>
                     </div>
                   </li>
+-->
               </ul>
           </section>
           <ul class="popular">
-              <li>
+              <!--<li>
                   <h2 class="visually-hidden">Каталог товаров</h2>
-              </li>
+              </li>-->
               <li>
                   <i class="popular-icon-VR"></i>
                   <a href="/catalog/virtual-reality.html">Виртуальная реальность</a>
@@ -169,7 +170,7 @@
               </li>
             </ul>
             <section class="services">
-              <h2 class="visually-hidden">Сервисы</h2>
+              <!--<h2 class="visually-hidden">Сервисы</h2>-->
               <ul class="services-navigation">
                   <li>
                       <a class="button" href="#">Доставка</a>
@@ -186,6 +187,7 @@
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                   <i class="delivery-icon"></i>
               </div>
+              <!--
               <div class="services-warranty">
                   <h3 id="warranty">Гарантия</h3>
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
@@ -197,6 +199,7 @@
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                   <i class="credit-icon"></i>
               </div>
+              -->
           </section>
           <ul class="manufacturer">
               <li>
@@ -244,7 +247,7 @@
                       <p>
                           <img src="img/images/map.jpg" width="560" height="222" alt="Адрес магазина">
                       </p>
-                      <button class="modal-close" type="button">Закрыть</button>
+                      <!--<button class="modal-close" type="button">Закрыть</button>-->
                       <a class="button" href="#write_us">Напишите нам</a>
                <div class="write_us">
                   <form class="filter" method="post" action="https://echo.htmlacademy.ru">
@@ -262,7 +265,7 @@
                       </p>
                       <button class="button" type="submit">Отправить</button>
                   </form>
-                  <button class="modal-close" type="button">Закрыть</button>
+                  <!--<button class="modal-close" type="button">Закрыть</button>-->
                 </div>
               </div>
           </section>
@@ -271,54 +274,36 @@
       <footer class="main-footer">
           <section class="footer-userblock">
                 <p class="logo-footer">Device</p>
-                <ul class="footer-user_block">
-                    <li class="user_block-log_in">
-                        <i class="log-in"></i>
-                        <a class="footer-login-link" href="login.html">Войти</a>
-                    </li>
-                    <li class="user_block-match">
-                        <i class="match"></i>
-                        <a class="footer-match-link" href="match.html">Сравнить</a>
-                    </li>
-                    <li  class="user_block-cart">
-                        <i class="cart"></i>
-                        <a class="footer-cart-link" href="cart.html">Корзина</a>
-                    </li>
-                </ul>
+                <div class="footer-user_block">
+                    <i class="log-in"></i>
+                    <a class="footer-login-link" href="login.html">Войти</a>
+                    <i class="match"></i>
+                    <a class="footer-match-link" href="match.html">Сравнить</a>
+                    <i class="cart"></i>
+                    <a class="footer-cart-link" href="cart.html">Корзина</a>
+                </div>
           </section>
           <section class="footer-navigation">
                 <p>г. Москва, ул. Строителей, 15</p>
+                <div>
+                    <a href="#delivery">Доставка</a>
+                   <a href="#warranty">Гарантия</a>
+                   <a href="#contacts">Контакты</a>
+                </div>
                 <p>Тел.: +7 (495) 495-95-95</p>
-                <ul>
-                   <li>
-                       <a href="#delivery">Доставка</a>
-                   </li>
-                   <li>
-                       <a href="#warranty">Гарантия</a>
-                   </li>
-                   <li>
-                       <a href="#contacts">Контакты</a>
-                   </li>
-                </ul>
           </section>
-          <section class="footer-social">   
-             <ul>
-                <li>
-                    <a href="fb.com">
-                        <i class="facebook"></i>
-                    </a>
-                </li>
-                 <li>
-                     <a href="instagram.com">
-                        <i class="instagram"></i>
-                     </a>
-                 </li>
-                 <li>
-                     <a href="twitter.com">
-                         <i class="twitter"></i>
-                     </a>
-                 </li>
-             </ul>
+          <section class="footer-links">   
+             <div class="social">
+                <a href="fb.com">
+                    <i class="facebook"></i>
+                </a>
+                <a href="instagram.com">
+                    <i class="instagram"></i>
+                </a>
+                <a href="twitter.com">
+                     <i class="twitter"></i>
+                </a>
+              </div>
              <a href="https://htmlacademy.ru/intensive/htmlcss">
                  <i class="academy"></i>
              </a>
