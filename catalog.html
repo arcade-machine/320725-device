@@ -8,13 +8,14 @@
       <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
+      <div class="container">
       <header class="main-header">
-        <a class="logo-header">Device</a>
+        <p class="logo-header">Device</p>
         <div class="user_block">
             <div class="user_block-search">
                 <i class="search"></i>
                 <form>
-                    <input type="text" placeholder="Поиск по сайту">
+                    <input type="text" class="search-form" placeholder="Поиск по сайту">
                     <button class="search-button" type="submit">Найти</button>
                 </form>
             </div>
@@ -30,20 +31,19 @@
             </div>
         </div>
         <nav class="main-navigation">
-            <ul class="main-navigation-menu">
-                <li class="main-navigation-menu-catalog">
-                    Каталог товаров
-                    <i class="catalog-plus"></i>
-                </li>
-                <li class="main-navigation-menu-wrapper">
-                    <a href="#delivery">Доставка</a>
-                    <a href="#warranty">Гарантия</a>
-                </li>
-                <li class="main-navigation-menu-contacts">
-                    <a href="#contacts">Контакты</a>
-                </li>
-            </ul>
-<!--пока уберу
+                <ul class="main-navigation-menu">
+                    <li class="menu-catalog">
+                        <a href="#catalog">Каталог товаров</a>
+                    </li>
+                    <li class="main-navigation-wrapper">
+                            <a class="menu-delivery" href="#delivery">Доставка</a>
+                            <a class="menu-warranty" href="#warranty">Гарантия</a>
+                    </li>
+                    <li class="menu-contacts">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            <!--пока уберу
             <ul class="main-navigation-cataloglist">
                 <li>
                     <a href="/catalog/virtual-reality.html">Виртуальная реальность</a>
@@ -67,7 +67,9 @@
 -->
         </nav>
       </header>
+      </div>
       
+      <div class="container">
       <main class="main-container">
           <section class="breadcrumbs">
                 <h1 class="page-title">Моноподы для селфи</h1>
@@ -214,8 +216,10 @@
             </div>
            </div>
       </main>
-
+      </div>
+      
       <footer class="main-footer">
+          <div class="container">
           <section class="footer-userblock">
                 <p class="logo-footer">Device</p>
                 <div class="footer-user_interaction">
@@ -252,6 +256,7 @@
                  <i class="academy"></i>
              </a>
           </section>
+          </div>
       </footer>
   </body>
 </html>

@@ -7,13 +7,14 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+      <div class="container">
       <header class="main-header">
-        <!--<p class="logo-header">Device</p>-->
+        <p class="logo-header">Device</p>
         <div class="user_block">
             <div class="user_block-search">
                 <i class="search"></i>
                 <form>
-                    <input type="text" placeholder="Поиск по сайту">
+                    <input type="text" class="search-form" placeholder="Поиск по сайту">
                     <button class="search-button" type="submit">Найти</button>
                 </form>
             </div>
@@ -29,20 +30,19 @@
             </div>
         </div>
         <nav class="main-navigation">
-            <ul class="main-navigation-menu">
-                <li class="main-navigation-menu-catalog">
-                    Каталог товаров
-                    <i class="catalog-plus"></i>
-                </li>
-                <li class="main-navigation-menu-wrapper">
-                    <a href="#delivery">Доставка</a>
-                    <a href="#warranty">Гарантия</a>
-                </li>
-                <li class="main-navigation-menu-contacts">
-                    <a href="#contacts">Контакты</a>
-                </li>
-            </ul>
-<!--пока уберу
+                <ul class="main-navigation-menu">
+                    <li class="menu-catalog">
+                        <a href="#catalog">Каталог товаров</a>
+                    </li>
+                    <li class="main-navigation-wrapper">
+                            <a class="menu-delivery" href="#delivery">Доставка</a>
+                            <a class="menu-warranty" href="#warranty">Гарантия</a>
+                    </li>
+                    <li class="menu-contacts">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            <!--пока уберу
             <ul class="main-navigation-cataloglist">
                 <li>
                     <a href="/catalog/virtual-reality.html">Виртуальная реальность</a>
@@ -66,20 +66,24 @@
 -->
         </nav>
       </header>
+      </div>
       
       <main class="main-container">
+        <div class="container">
         <!--<h1 class="visually-hidden">Магазин "Device"</h1>-->
         <section class="main-container-slider">
             <ul>
                 <li>
                     <div class="slide-one">
-                      <img src="img/images/slider-1.png" alt="Палка для селфи" height="486" width="384">
+                      <div class="slide-image">
+                        <img src="img/images/slider-1.png" alt="Палка для селфи" height="486" width="384">
+                      </div>
                       <div class="slide_one">
                         <!--<b>01</b>-->
-                          <h2 class="slide-head">Делай селфи,как Бен Стиллер!</h2>
+                          <h2 class="slide-head">Делай селфи,<br>как Бен Стиллер!</h2>
                           <p class="slide-info">Самая длинная палка для селфи доступна в нашем магазине.<br>
                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                          <a class="button slide-more-info" href="/catalog.html">Подробнее</a>
+                          <a class="slide-more-info" href="/catalog.html">Подробнее</a>
                           <table class="slide-item-spec">
                               <tr class="slide-item-spec-value">
                                   <td>8,5 м</td>
@@ -92,11 +96,10 @@
                                   <td>Материал</td>
                               </tr>
                            </table>
-                           
                        </div>
                     </div>
                   </li>
-<!--слайды пока убрал
+                  <!--слайды пока убрал
                   <li>
                   <div class="slide_two">
                       <img src="img/images/slider-2.png" alt="Фитнес-браслет" height="485" width="345">
@@ -137,7 +140,7 @@
                        </div>
                     </div>
                   </li>
--->
+                -->
               </ul>
           </section>
           <ul class="popular">
@@ -169,24 +172,28 @@
                   <a href="/catalog/quadrupter.html">Квадрокоптеры</a>
               </li>
             </ul>
+          </div>
             <section class="services">
+              <div class="container">
               <!--<h2 class="visually-hidden">Сервисы</h2>-->
-              <ul class="services-navigation">
-                  <li>
-                      <a class="button" href="#">Доставка</a>
-                  </li>
-                  <li>
-                      <a class="button" href="#">Гарантия</a>
-                  </li>
-                  <li>
-                      <a class="button" href="#">Кредит</a>
-                  </li>
-              </ul>
-              <div class="services-delivery">
-                  <h3 id="delivery">Доставка</h3>
-                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                  <i class="delivery-icon"></i>
-              </div>
+                    <div class="services-wrapper">
+                    <ul class="services-navigation">
+                        <li>
+                            <a class="button" href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a class="button" href="#">Гарантия</a>
+                        </li>
+                        <li>
+                            <a class="button" href="#">Кредит</a>
+                        </li>
+                    </ul>
+                    <div class="services-delivery">
+                        <h3 id="delivery">Доставка</h3>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        <i class="delivery-icon"></i>
+                    </div>
+                </div>
               <!--
               <div class="services-warranty">
                   <h3 id="warranty">Гарантия</h3>
@@ -200,26 +207,29 @@
                   <i class="credit-icon"></i>
               </div>
               -->
+             </div>
           </section>
+          
+          <div class="container">
           <ul class="manufacturer">
               <li>
                   <a href="/catalog#dji.html">
-                      <img src="img/images/logo-dji.png" alt="dji" class="dji">
+                      <img src="img/images/logo-dji.png" width="260px" height="100px" alt="dji" class="manufacturer-item">
                   </a>
               </li>
               <li>
                    <a href="/catalog#sp-gadgets.html">
-                       <img src="img/images/logo-sp_gadgets.png" alt="sp_gadgets" class="sp-gadgets">
+                       <img src="img/images/logo-sp_gadgets.png" width="260px" height="100px" alt="sp_gadgets" class="manufacturer-item">
                    </a>
               </li>
               <li>
                    <a href="/catalog#gopro.html" class="main-container-manufacturer-logo">
-                       <img src="img/images/logo-go_pro.png" alt="Go-pro" class="go-pro">
+                       <img src="img/images/logo-go_pro.png" width="260px" height="100px" alt="Go-pro" class="manufacturer-item">
                    </a>
               </li>
               <li>
                    <a href="/catalog#vive.html">
-                       <img src="img/images/logo-vive.png" alt="Vive" class="vive">
+                       <img src="img/images/logo-vive.png" width="260px" height="100px" alt="Vive" class="manufacturer-item">
                    </a>
               </li>
           </ul>
@@ -269,9 +279,11 @@
                 </div>-->
               </div>
           </section>
+          </div>
       </main>
       
       <footer class="main-footer">
+          <div class="container">
           <section class="footer-userblock">
                 <p class="logo-footer">Device</p>
                 <div class="footer-user_interaction">
@@ -308,6 +320,7 @@
                  <i class="academy"></i>
              </a>
           </section>
+          </div>
       </footer>
   </body>
 </html>
