@@ -22,11 +22,13 @@
                 <i class="log-in"></i>
                 <a class="login-link" href="login.html">Войти</a>
             </div>
-            <div class="user_block-match_cart">
-                <i class="match"></i>
-                <a class="match-link" href="match.html">Сравнить</a>
-                <i class="cart"></i>
-                <a class="cart-link" href="cart.html">Корзина</a>
+            <div class="user_block-wrapper">
+                <div class="user_block-compare">
+                    <a href="#">Сравнить</a>
+                </div>
+                <div class="user_block-cart">
+                    <a href="#">Корзина</a>
+                </div>
             </div>
         </div>
         <nav class="main-navigation">
@@ -74,16 +76,16 @@
         <section class="main-container-slider">
             <ul>
                 <li>
-                    <div class="slide-one">
+                    <div class="slider">
                       <div class="slide-image">
                         <img src="img/images/slider-1.png" alt="Палка для селфи" height="486" width="384">
                       </div>
-                      <div class="slide_one">
-                        <!--<b>01</b>-->
+                      <div class="slide-content">
+                          <b>01</b>
                           <h2 class="slide-head">Делай селфи,<br>как Бен Стиллер!</h2>
                           <p class="slide-info">Самая длинная палка для селфи доступна в нашем магазине.<br>
                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                          <a class="slide-more-info" href="/catalog.html">Подробнее</a>
+                          <a class="slide-more-info button" href="/catalog.html">Подробнее</a>
                           <table class="slide-item-spec">
                               <tr class="slide-item-spec-value">
                                   <td>8,5 м</td>
@@ -147,29 +149,51 @@
               <!--<li>
                   <h2 class="visually-hidden">Каталог товаров</h2>
               </li>-->
-              <li>
-                  <i class="popular-icon-VR"></i>
-                  <a href="/catalog/virtual-reality.html">Виртуальная реальность</a>
+              <li class="virtual-reality">
+                  <a href="/catalog/virtual-reality.html">
+                          <span class="popular-block"></span>
+                          <p>Виртуальная реальность</p>
+                  </a>
               </li>
               <li>
-                  <i class="popular-icon-monopods"></i>
-                  <a href="/catalog/monopods.html">Моноподы для селфи</a>
+                  <a href="/catalog/selfie-monopods.html">
+                      <div class="monopods">
+                          <span class="popular-block"></span>
+                          <p>Моноподы для селфи</p>
+                      </div>
+                  </a>
               </li>
               <li>
-                  <i class="popular-icon-cameras"></i>
-                  <a href="/catalog/action-cameras.html">Экшн-камеры</a>
+                  <a href="/catalog/action-cameras.html">
+                      <div class="cameras">
+                          <span class="popular-block"></span>
+                          <p>Экшн-камеры</p>
+                      </div>
+                  </a>
               </li>
               <li>
-                  <i class="popular-icon-wristbands"></i>
-                  <a href="/catalog/fitness-wristbands.html">Фитнес-браслеты</a>
+                  <a href="/catalog/action-cameras.html">
+                      <div class="wristbands">
+                          <span class="popular-block"></span>
+                          <p>Фитнес-браслеты</p>
+                      </div>
+                  </a>
               </li>
               <li>
-                  <i class="popular-icon-smar-watch"></i>
-                  <a href="/catalog/smart-watch.html">Умные часы</a>
+                  <a href="/catalog/smart-watch.html">
+                      <div class="smart-watch">
+                          <span class="popular-block"></span>
+                          <p>Умные часы</p>
+                      </div>
+                  </a>
               </li>
               <li>
-                  <i class="popular-icon-quadrupter"></i>
-                  <a href="/catalog/quadrupter.html">Квадрокоптеры</a>
+                  <a href="/catalog/quadrupter.html">
+                      <div class="quadrupter">
+                          <span class="popular-block"></span>
+                          <p>Квадрокоптеры</p>
+                      </div>
+                  </a>
               </li>
             </ul>
           </div>
@@ -191,7 +215,6 @@
                     <div class="services-delivery">
                         <h3 id="delivery">Доставка</h3>
                         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                        <i class="delivery-icon"></i>
                     </div>
                 </div>
               <!--
@@ -236,8 +259,8 @@
           <section class="main-container-info">
               <div class="info-about_us">
                     <h3>О нас</h3>
-                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
                       <ul class="about-companys">
                           <li>
                               <a href="https://www.dellin.ru/">Деловые линии</a>
@@ -287,11 +310,8 @@
           <section class="footer-userblock">
                 <p class="logo-footer">Device</p>
                 <div class="footer-user_interaction">
-                    <i class="log-in"></i>
                     <a class="footer-login-link" href="login.html">Войти</a>
-                    <i class="match"></i>
                     <a class="footer-match-link" href="match.html">Сравнить</a>
-                    <i class="cart"></i>
                     <a class="footer-cart-link" href="cart.html">Корзина</a>
                 </div>
           </section>
@@ -306,18 +326,18 @@
           </section>
           <section class="footer-links">   
              <div class="social">
-                <a href="fb.com">
-                    <i class="facebook"></i>
+                <a class="facebook" href="fb.com">
+                    <span class="visually-hidden">Фейсбук</span>
                 </a>
-                <a href="instagram.com">
-                    <i class="instagram"></i>
+                <a class="instagram" href="instagram.com">
+                    <span class="visually-hidden">Инстаграм</span>
                 </a>
-                <a href="twitter.com">
-                     <i class="twitter"></i>
+                <a class="twitter" href="twitter.com">
+                    <span class="visually-hidden">Твиттер</span>
                 </a>
               </div>
-             <a href="https://htmlacademy.ru/intensive/htmlcss">
-                 <i class="academy"></i>
+             <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+                 <span class="visually-hidden">HTML-Академия</span>
              </a>
           </section>
           </div>
