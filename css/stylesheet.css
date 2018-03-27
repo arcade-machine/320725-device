@@ -124,10 +124,6 @@ a {
     color: #000000;        
 }
 
-.button {
-      
-}
-
 .logo-header {
     font-family: "gilroyextrabold", sans-serif;
     font-size: 48px;
@@ -181,7 +177,19 @@ a {
     outline: 0;
 }
 
+.user_block-search input:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user_block-search input:focus {
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(0, 0, 0);
+    
+    color: rgba(0, 0, 0, 1.0);
+}
+
 .search-button {
+        
     position: absolute;
     top: -2px;
     left: 395px;
@@ -207,11 +215,6 @@ a {
     letter-spacing: 0.01em;
 }
 
-.search-form:focus {
-    border-bottom: 2px solid;
-    border-bottom-color: rgb(0, 0, 0);
-}
-
 .search-form:focus + .search-button{
     background-color: transparent;
     border: none;
@@ -227,15 +230,13 @@ a {
     padding-right: 10px;
 }
 
-.search-form:focus + .search-button:hover{
+.search-form:focus + .search-button:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
-/*------НЕ РАБОТАЕТ-------*/
-.search-form:focus + .search-button:active{
-    background-color: rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 0.3);
+.search-form:focus + .search-button:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .login-link {
@@ -325,6 +326,18 @@ a {
     background-position: 0 0;
 }
 
+.login-link:hover,
+.compare-link:hover,
+.cart-link:hover {
+    opacity: 0.6;
+}
+
+.login-link:active,
+.compare-link:active,
+.cart-link:active {
+    opacity: 0.3;
+}
+
 .user_block-search::before {
     content: "";
   
@@ -396,8 +409,6 @@ a {
     height: 165px;
     width: 1060px;
     
-    z-index: 1;
-    
     position: absolute;
     
     padding: 0;
@@ -413,15 +424,27 @@ a {
 
 .catalog:hover .catalog-options {
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 45px;
+    
+    z-index: 2;
     
     box-sizing: border-box;
     
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+}
+
+.catalog-options a {
+    width: 190px;
+    height: 30px;
+    
+    margin-right: 45px;
+}
+
+.catalog-options a:nth-child(5) {
+    margin-bottom: 40px;
 }
 
 .menu-catalog {
@@ -461,6 +484,10 @@ a {
     opacity: 0.3;
 }
 
+.menu-catalog:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
 .menu-delivery,
 .menu-warranty,
 .menu-contacts {
@@ -485,11 +512,11 @@ a {
 }
 
 
-.menu-catalog a:hover{
+.catalog-options a:hover{
     color: rgba(0, 0, 0, 0.6);    
 }
 
-.menu-catalog a:active{
+.catalog-options a:active{
     color: rgba(0, 0, 0, 0.3);    
 }
 
@@ -505,7 +532,9 @@ a {
 .arrows ul,
 .main-container-items-list,
 .pagination,
-.main-container-bluetooth ul {
+.main-container-bluetooth ul,
+.navigation-list,
+.about-companys {
     list-style: none;
 }
 
@@ -520,7 +549,7 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-/*--------------СТИЛИ ДЛЯ MAIN------------*/
+/*--------------СТИЛИ ДЛЯ СЛАЙДЕРА------------*/
 
 .main-container-slider {
     margin: 0;
@@ -528,32 +557,116 @@ a {
     
     position: absolute;
     top: -130px;
-    left: 85px;
+    left: 15px;
      
 }
 
-.main-container-slider b{
-    font-family: "gilroyextrabold";
-    font-size: 179px;
-    line-height: 179px;
-    color: rgb(0, 0, 0)
-}
-
 .slide-image {
-    margin-right: 110px;
+    padding: 0;
+    margin-right: 30px;
+        
+    display: flex;
+    justify-content: flex-start;
+    
+    box-sizing: border-box;
+    
+    min-width: 530px;
+    min-height: 485px;
 }
 
 .slider {
     margin: 0;
     padding: 0;
-        
-    display: flex;
+    
+    display: none;
+}
+
+
+.slider:nth-child(1) .slide-image {
+    padding-left: 50px;
+}
+
+.slider:nth-child(2) .slide-image{
+    padding-left: 80px;
+}
+
+.slider:nth-child(3) .slide-image{
+    padding-top: 70px;
+}
+
+.slider-controls {
+    position: absolute;
+    
+    width: 130px;
+    height: 20px;
+    
+    top: 380px;
+    left: 920px;
+}
+
+.slider-controls label {
+    cursor: pointer;
+    
+    position: relative;
+    
+    display: inline-block;
+    
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    margin-right: 20px;
+    
+    box-sizing: border-box;
+}
+
+.slider-controls label::after{
+    content: "";
+    
+    width: 14px;
+    height: 14px;
+    
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 1;
+    
+    background-color: inherit;
+    
+    border: 1px solid;
+    border-color: black;
+    
+    border-radius: 50%;
+}
+
+#product-selfie:checked ~ .slider-controls .slider-controls-item--selfie::before,
+#product-fitness-wristbands:checked ~ .slider-controls .slider-controls-item--fitness-wristbands::before, 
+#product-quadrupter:checked ~ .slider-controls .slider-controls-item--quadrupter::before {
+    content: "";
+  
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 2;
+  
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+  
+    background-color: inherit;
+    border: 1px solid;
+    border-radius: 50%;
 }
 
 .slide-content {
     margin: 0;
     padding: 0;
     padding-top: 85px;
+    
+    max-width: 500px;
         
     display: flex;
     flex-direction: column;
@@ -563,14 +676,20 @@ a {
 
 .slide-content b{
     position: absolute;
+    top: -10px;
+    right: -60px;
+            
+    z-index: 0;
     
     color: #ffffff;
     
     padding: 0;
     margin: 0;
     
-    right: -35px;
-    top: -10px;
+    font-family: "gilroyextrabold";
+    font-size: 179px;
+    line-height: 179px;
+    color: rgb(255, 255, 255);
 }
 
 .slide-content::before {
@@ -591,23 +710,64 @@ a {
     padding: 0;
     margin-bottom: 35px;
     
+    z-index: 1;
+    
     font-family: "gilroyextrabold";
     font-size: 47px;
     line-height: 56px;
 }
 
 .slide-info {
+    margin: 0;
+    padding: 0;
+    
     margin-bottom: 60px;
 }
 
 .slide-more-info {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
+    display: block;
+    align-items: center;
     
-    font-family: "open_sanslight";
-    font-size: 15px;
-    line-height: 30px;
+    position: relative;
+    
+    max-width: 220px;
+    
+    margin: 0;
+    padding: 0;
+    padding: 15px 40px;
+    
+    box-sizing: border-box;
+    
+    font-family: "gilroyextrabold";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    
+    margin-bottom: 65px;
+}
+
+.slide-more-info::before {
+    content: "";
+    
+    position: absolute;
+    left: 0px;
+    top: 23px;
+    
+    z-index: -1;
+        
+    height: 8px;
+    width: 100%;
+    
+    background-color: rgb(240, 197, 46);
+}
+
+.slide-more-info:hover {
+    background-color: rgb(240, 197, 46);
+}
+
+.slide-more-info:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .slide-item-spec {    
@@ -640,6 +800,22 @@ a {
     
     padding: 0;
     margin: 0;
+}
+
+#product-selfie:checked ~ ul .slider:nth-child(1) {
+  display: flex;
+}
+
+#product-fitness-wristbands:checked ~ ul .slider:nth-child(2) {
+  display: flex;
+}
+
+#product-quadrupter:checked ~ ul .slider:nth-child(3) {
+  display: flex;
+}
+
+.slide-content a{
+    display: inline-block;
 }
 
 /*--------СЛАЙД ПОПУЛЯРНЫЕ ТОВАРЫ----------*/
@@ -785,19 +961,13 @@ a {
 .wristbands:hover,
 .smart-watch:hover,
 .quadrupter:hover{
-    background-color: rgba(240, 197, 46, 1);
+    background-color: rgba(240, 197, 46, 1.0);
 }
 
-/* Оставлю на потом
-.virtual-reality span:active,
-.monopods span:active,
-.cameras span:active,
-.wristbands span:active,
-.smart-watch span:active,
-.quadrupter span:active{
-    background-color: rgba(240, 197, 46, 1);
+.virtual-reality:active {
+    background-color: rgba(240, 197, 46, 0.3);
+    
 }
-*/
 
 /*-------------СТИЛЬ ДЛЯ СЕРВИСЫ-----------*/
 
@@ -827,6 +997,8 @@ a {
     position: relative;
     top: -25px;
     
+    margin: 0;
+    padding: 0;
     margin-bottom: 40px;
 }
 
@@ -852,7 +1024,7 @@ a {
     margin-right: 120px;
 }
 
-.services-delivery {
+.navigation-list {
     width: 440px;
     height: 175px;
     
@@ -875,7 +1047,57 @@ a {
     background-color: rgb(0, 0, 0);
 }
 
-.services-delivery::after {
+.services-delivery-info::after {
+    
+}
+
+.services-wrapper {
+    display: flex;
+}
+
+.services-navigation label{
+    position: relative;
+    
+    cursor: pointer;
+    
+    z-index: 0;
+    
+    display: block;
+    text-align: center;
+    
+    font-family: "gilroyextrabold";
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    width: 160px;
+}
+
+.services-navigation label::before {
+    content: "";
+    
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    
+    z-index: -1;
+        
+    height: 8px;
+    width: 100%;
+    
+    background-color: rgb(240, 197, 46);
+}
+
+.services-navigation label:hover{
+    background-color: rgb(240, 197, 46);
+}
+
+.navigation-list .navigation-item:nth-child(1)::after {
     content: "";
     
     position: absolute;
@@ -890,9 +1112,100 @@ a {
     background-position: 0 0;
 }
 
-.services-wrapper {
-    display: flex;
+.navigation-list .navigation-item:nth-child(2)::after {
+    content: "";
+    
+    position: absolute;
+    top: -35px;
+    left: 550px;        
+        
+    width: 171px;
+    height: 195px;
+  
+    background-image: url("../img/icons/warranty-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
+
+.navigation-list .navigation-item:nth-child(3)::after {
+    content: "";
+    
+    position: absolute;
+    top: -35px;
+    left: 550px;        
+        
+    width: 156px;
+    height: 188px;
+  
+    background-image: url("../img/icons/credit-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.navigation-item {
+    display: none;
+}
+
+#delivery-info:checked ~ .navigation-list .navigation-item:nth-child(1) {
+  display: block;
+}
+
+#warranty-info:checked ~ .navigation-list .navigation-item:nth-child(2) {
+  display: block;
+}
+
+#credit-info:checked ~ .navigation-list .navigation-item:nth-child(3) {
+  display: block;
+}
+
+#delivery-info:checked ~ .services-navigation .services-delivery::before,
+#warranty-info:checked ~ .services-navigation .services-warranty::before,
+#credit-info:checked ~ .services-navigation .services-credit::before {
+    display: none;
+}
+
+#delivery-info:checked ~ .services-navigation .services-delivery {
+    content: "";
+    
+    color: rgb(247, 225, 132);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    
+    text-align: left;
+   
+    padding-left: 33px;
+    
+    box-sizing: border-box;
+}
+
+#warranty-info:checked ~ .services-navigation .services-warranty {
+    content: "";
+    
+    color: rgb(247, 225, 132);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    
+    text-align: left;
+   
+    padding-left: 38px;
+    
+    box-sizing: border-box;
+}
+
+#credit-info:checked ~ .services-navigation .services-credit {
+    content: "";
+    
+    color: rgb(247, 225, 132);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    
+    text-align: left;
+   
+    padding-left: 46px;
+    
+    box-sizing: border-box;
+}
+
 
 /*-------------БЛОК ПРОИЗВОДИТЕЛЕЙ-------------*/
 
@@ -936,13 +1249,11 @@ a {
 
 
 .info-about_us {
-    width: 480px;
+    min-width: 500px;
     
     margin-right: 100px;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .info-about_us::before {
@@ -958,14 +1269,12 @@ a {
     background-color: rgb(0, 0, 0);
 }
 
-.info-contacts {
-    width: 560px;
-}
 
-.info-about_us h3{
+.info-about_us h3,
+.info-contacts h3{
     padding: 0;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .info-about_us p{
@@ -974,13 +1283,11 @@ a {
     line-height: 30px;
     
     padding: 0;
+    padding-bottom: 40px;
     margin: 0;
 }
 
 .info-contacts {
-    display: flex;
-    flex-direction: column;
-    
     position: relative;
 }
 
@@ -1009,6 +1316,9 @@ a {
     padding: 0;
 }
 
+.info-contacts img {
+    margin-bottom: 80px;
+}
 
 .write_us p{
     font-family: "gilroyextrabold";
@@ -1020,21 +1330,125 @@ a {
 }
 
 .about-companys {
+    width: 200px;
+    height: 150px;
+    
     font-family: "gilroyextrabold";
     font-size: 16px;
     line-height: 40px;
     
-    padding: 0;
     margin: 0;
-    margin-left: 20px;
-    margin-top: 0px;
+    padding: 0;
+    padding-top: 40px;
+    padding-left: 35px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
 }
 
-.info-about_us .button {
+.del_lin {
+    position: relative;
+}
+
+.del_lin::before {
+    content: "";
+    
+    position: absolute;
+    
+    top: 6px;
+    left: -25px;
+    
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    background-color: transparent;
+}
+
+.ae5000 {
+    position: relative;
+}
+
+.ae5000::before {
+    content: "";
+    
+    position: absolute;
+    
+    top: 6px;
+    left: -25px;
+    
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    background-color: transparent;
+}
+
+.jde {
+    position: relative;
+}
+
+.jde::before {
+    content: "";
+    
+    position: absolute;
+    
+    top: 6px;
+    left: -25px;
+    
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    background-color: transparent;
+}
+
+.about_us-button,
+.contacts-button{
+    display: inline-block;
+   
+    box-sizing: border-box;
+    
+    position: relative;
+    
+    font-family: "gilroyextrabold";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    
+    text-transform: uppercase;
+    
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    padding: 8px 25px;
+}
 
+.about_us-button:hover,
+.contacts-button:hover {
+    background-color: rgb(240, 197, 46);
+}
+
+.about_us-button:active,
+.contacts-button:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.about_us-button::before,
+.contacts-button::before {
+    content: "";
+    
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    
+    z-index: -1;
+        
+    height: 8px;
+    width: 100%;
+    
+    background-color: rgb(240, 197, 46);
 }
 
 .write_us-item input::placeholder {
@@ -1068,7 +1482,7 @@ a {
     color: rgb(255, 198, 0);
     
     margin: 0;
-    margin-right: 680px;
+    margin-right: 720px;
     padding: 0;
 }
 
@@ -1102,6 +1516,8 @@ a {
     box-sizing: border-box;
         
     width: 70px;
+    
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-match {
@@ -1116,6 +1532,8 @@ a {
     box-sizing: border-box;
     
     width: 90px;
+    
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-cart {
@@ -1129,6 +1547,8 @@ a {
     box-sizing: border-box;
     
     width: 85px;
+    
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-login::after {
@@ -1176,17 +1596,22 @@ a {
     background-position: 0 0;
 }
 
-.main-footer a{
-    color: rgb(255, 255, 255);
+.footer-login:hover,
+.footer-match:hover,
+.footer-cart:hover {
+     color: rgb(255, 255, 255);
 }
 
-
-.logo-footer:hover {
-    opacity: 0.6;
+.footer-login:active,
+.footer-match:active,
+.footer-cart:active {
+     opacity: 0.3;
 }
 
-.logo-footer:active {
-    opacity: 0.3;
+.footer-login:hover::after,
+.footer-match:hover::after,
+.footer-cart:hover::after{
+     opacity: 0.6;
 }
 
 .footer-navigation {
@@ -1205,6 +1630,18 @@ a {
     padding: 0;
     
     width: 440px;
+}
+
+.footer-wrapper a{
+    color: rgb(255, 255, 255);
+}
+
+.footer-wrapper a:hover{
+    opacity: 0.6;
+}
+
+.footer-wrapper a:active{
+    opacity: 0.3;
 }
 
 .footer-navigation a{
@@ -1276,20 +1713,34 @@ a {
     background-position: 0 0;
 }
 
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    opacity: 0.6;
+}
+
+.facebook:active,
+.instagram:active,
+.twitter:active {
+    opacity: 0.1;
+}
+
 .html-academy {
     position: absolute;
     
-    left: 625px;
+    left: 645px;
     bottom: 0;
         
     width: 27px;
     height: 35px;    
 }
 
-.facebook:hover::before,
-.instagram:hover::before,
-.twitter:hover::before {
-    opacity: 1;
+.html-academy:hover {
+    opacity: 0.6;   
+}
+
+.html-academy:active {
+    opacity: 0.3;   
 }
 
 .html-academy::after {
@@ -1305,26 +1756,6 @@ a {
     background-position: 0 0;
 }
 
-
-.footer-navigation a:hover{
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-navigation a:active{
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-userblock a{
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-userblock a:hover {
-    color: rgba(255, 255, 255, 1.0);
-}
-
-.footer-userblock a:active {
-    color: rgba(255, 255, 255, 0.3);
-}
 
 /*-----------СТИЛЬ ДЛЯ КАТАЛОГА----------------*/
 
