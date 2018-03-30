@@ -1735,6 +1735,10 @@ a
     }
 }
 
+iframe {
+    border: 0px;
+}
+
 .map
 {
     position: fixed;
