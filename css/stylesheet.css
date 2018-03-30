@@ -1140,9 +1140,14 @@ a
     background-color: rgba(240, 197, 46, 1.0);
 }
 
-.virtual-reality:active
+.virtual-reality:active::after,
+.monopods:active::after,
+.cameras:active::after,
+.wristbands:active::after,
+.smart-watch:active::after,
+.quadrupter:active::after
 {
-    background-color: rgba(240, 197, 46, .3);
+    opacity: .3;
 }
 
 /*-------------СТИЛЬ ДЛЯ СЕРВИСЫ-----------*/
@@ -2530,7 +2535,7 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 80px;
+    margin-bottom: 0;
     padding-left: 40px;
 
     background-color: rgb(255, 255, 255);
@@ -2563,6 +2568,8 @@ a
 
 .main-container-search
 {
+    position: relative;
+
     width: 240px;
     margin: 0;
     margin-right: 50px;
@@ -2572,11 +2579,41 @@ a
     background-color: rgba(0, 0, 0, .08);
 }
 
+.main-container-search::after
+{
+    position: absolute;
+    top: 0;
+    left: -50vw;
+
+    width: 50vw;
+    height: 100%;
+
+    content: '';
+
+    background-color: rgba(0, 0, 0, .08);
+}
+
+.main-container-search h3::after
+{
+    position: absolute;
+    top: 0;
+    left: -50vw;
+
+    width: 50vw;
+    height: 100%;
+
+    content: '';
+
+    background-color: rgba(0, 0, 0, .08);
+}
+
 .main-container-search h3
 {
     font-family: 'gilroyextrabold', sans-serif;
     font-size: 16px;
     line-height: 24px;
+
+    position: relative;
 
     display: inline-block;
 
@@ -2603,21 +2640,20 @@ a
 }
 
 
-.search-price
+.filter-item
 {
     position: relative;
 
-    height: 140px;
+    height: 135px;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
-    padding-left: 20px;
 }
 
-.search-price::before
+.filter-item::before
 {
     position: absolute;
     top: 0;
+    left: 15px;
 
     width: 201px;
     height: 2px;
@@ -2730,7 +2766,128 @@ a
     padding: 0;
 }
 
+.filter-item
+{
+    margin: 0;
+    padding: 0;
 
+    border: none;
+}
+
+.range-filter
+{
+    width: 200px;
+    margin-top: 40px;
+}
+
+.filter-item legend
+{
+    font-family: 'gilroyextrabold';
+    font-size: 18px;
+    line-height: 24px;
+
+    left: .01em;
+
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.range-controls
+{
+    position: relative;
+
+    height: 5px;
+    padding-right: 0;
+    padding-left: 20px;
+
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.range-controls .bar
+{
+    width: 100%;
+    height: 2px;
+
+    background: #91c92f;
+}
+
+.range-controls .toggle
+{
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background-color: #ababab;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+            box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min
+{
+    left: 15px;
+}
+
+.range-controls .toggle-max
+{
+    left: 130px;
+}
+
+
+.range-controls .scale
+{
+    width: 200px;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+
+    background: #d7dcde;
+}
+
+.price-controls
+{
+    font-size: 0;
+}
+
+.price-controls label
+{
+    font-family: 'gilroylight', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+
+    color: rgba(0, 0, 0, .2);
+}
+
+.price-controls input
+{
+    font-family: 'gilroylight', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 40px;
+
+    color: rgba(0, 0, 0, .2);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
 
 .filter-button
 {
@@ -2805,9 +2962,51 @@ a
     justify-content: space-between;
 }
 
+
+.items-wrapper
+{
+    position: relative;
+}
+
+.items-wrapper::after
+{
+    position: absolute;
+    top: 0;
+    right: -50vw;
+
+    width: 50vw;
+    height: 5.6%;
+
+    content: '';
+
+    background-color: rgba(0, 0, 0, .08);
+}
+
 .main-container-sorting-criterion a
 {
     color: rgba(0, 0, 0, .3);
+}
+
+.main-container-sorting-criterion a:hover
+{
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.main-container-sorting-criterion a:active
+{
+    color: rgba(0, 0, 0, .6);
+}
+
+.up:hover::before,
+.down:hover::before
+{
+    opacity: .4;
+}
+
+.up:active::before,
+.down:active::before
+{
+    opacity: none;
 }
 
 .main-container-sorting h3
@@ -2857,11 +3056,15 @@ a
     position: relative;
 
     margin-right: 20px;
+
+    opacity: .2;
 }
 
 .down
 {
     position: relative;
+
+    opacity: .2;
 }
 
 .up::before
@@ -3091,6 +3294,10 @@ a
     justify-content: center;
 }
 
+.items-wrapper
+{
+    margin-bottom: 75px;
+}
 
 .pagination
 {
@@ -3166,6 +3373,21 @@ a
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.pages a
+{
+    color: rgba(0, 0, 0, .3);
+}
+
+.pages a:hover
+{
+    color: rgba(0, 0, 0, .6);
+}
+
+.pages a:active
+{
+    color: rgba(0, 0, 0, 1.0);
 }
 
 .filter-option-color label
