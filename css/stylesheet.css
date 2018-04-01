@@ -4,7 +4,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+        url('../fonts/opensanslight.woff') format('woff');
 }
 
 @font-face
@@ -13,7 +14,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+        url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face
@@ -22,7 +24,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+        url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face
@@ -31,7 +34,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2');
+    src: url('../fonts/opensans.woff2') format('woff2'),
+        url('../fonts/opensans.woff') format('woff');
 }
 
 body
@@ -52,6 +56,8 @@ body
     padding-top: 40px;
     padding-right: 20px;
     padding-left: 20px;
+    
+    box-sizing: border-box;
 }
 
 .middle-container
@@ -64,6 +70,8 @@ body
     padding-right: 20px;
     padding-bottom: 180px;
     padding-left: 20px;
+    
+    box-sizing: border-box;
 }
 
 .container-bottom
@@ -73,6 +81,8 @@ body
     padding-right: 20px;
     padding-bottom: 90px;
     padding-left: 20px;
+    
+    box-sizing: border-box;
 }
 
 .container-services
@@ -81,6 +91,8 @@ body
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
+    
+    box-sizing: border-box;
 }
 
 .container-footer
@@ -91,6 +103,8 @@ body
     padding-right: 20px;
     padding-bottom: 65px;
     padding-left: 20px;
+    
+    box-sizing: border-box;
 }
 
 .container-catalog
@@ -98,6 +112,8 @@ body
     width: 1200px;
     margin: 0 auto;
     padding: 0;
+    
+    box-sizing: border-box;
 }
 
 .layer 
@@ -194,7 +210,7 @@ a
 
 .logo-header
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 48px;
     line-height: 48px;
 
@@ -227,7 +243,7 @@ a
 
 .search-form
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
 
@@ -263,7 +279,7 @@ a
 
 .search-button
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
 
@@ -513,7 +529,7 @@ a
 
 .catalog-options
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
 
@@ -569,7 +585,7 @@ a
 
 .menu-catalog
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -614,7 +630,7 @@ a
 .menu-warranty,
 .menu-contacts
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -823,7 +839,7 @@ a
 
 .slide-content b
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 179px;
     line-height: 179px;
 
@@ -854,7 +870,7 @@ a
 
 .slide-head
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 56px;
 
@@ -874,7 +890,7 @@ a
 
 .slide-more-info
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -931,7 +947,7 @@ a
 
 .slide-item-spec-name td
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
 
@@ -941,7 +957,7 @@ a
 
 .main-container-slider .slide-item-spec-value
 {
-    font-family: 'gilroylight';
+    font-family: 'gilroylight', Arial, sans-serif;
     font-size: 36px;
     line-height: 48px;
 
@@ -951,7 +967,7 @@ a
 
 .main-container-slider .slide-item-spec-name
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 20px;
     line-height: 10px;
 
@@ -1021,7 +1037,7 @@ a
 
 .popular p
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -1159,7 +1175,7 @@ a
 
 .services
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
 
@@ -1174,7 +1190,7 @@ a
 .services h3,
 .main-container-info h3
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
 
@@ -1258,7 +1274,7 @@ a
 
 .services-navigation label
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -1505,7 +1521,7 @@ a
 
 .info-about_us p
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
 
@@ -1551,76 +1567,28 @@ a
     margin-bottom: 80px;
 }
 
-.about-companys
+.about-companys {
+    margin-bottom: 80px;
+}
+
+.about-companys p
 {
-    font-family: 'gilroyextrabold';
+    position: relative;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 200px;
-    height: 150px;
     margin: 0;
-    margin-bottom: 70px;
     padding: 0;
-    padding-top: 40px;
-    padding-left: 35px;
 }
 
-.del_lin
-{
-    position: relative;
-}
 
-.del_lin::before
+.about-companys p::before
 {
     position: absolute;
-    top: 6px;
-    left: -25px;
-
-    width: 5px;
-    height: 5px;
-
-    content: '';
-
-    border: 1px solid;
-    border-color: rgb(230, 230, 230);
-    border-radius: 50%;
-    background-color: transparent;
-}
-
-.ae5000
-{
-    position: relative;
-}
-
-.ae5000::before
-{
-    position: absolute;
-    top: 6px;
-    left: -25px;
-
-    width: 5px;
-    height: 5px;
-
-    content: '';
-
-    border: 1px solid;
-    border-color: rgb(230, 230, 230);
-    border-radius: 50%;
-    background-color: transparent;
-}
-
-.jde
-{
-    position: relative;
-}
-
-.jde::before
-{
-    position: absolute;
-    top: 6px;
+    top: 15px;
     left: -25px;
 
     width: 5px;
@@ -1637,7 +1605,7 @@ a
 .about_us-button,
 .contacts-write-us
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -1875,7 +1843,7 @@ iframe {
 
 .write_us label
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 }
@@ -1883,7 +1851,7 @@ iframe {
 .write_us input,
 .write_us textarea
 {
-    font-family: 'open_sansregular', sans-serif;
+    font-family: 'open_sansregular', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
 
@@ -1930,7 +1898,7 @@ iframe {
 
 .write_us .button
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -2068,7 +2036,7 @@ iframe {
 
 .logo-footer
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 48px;
     line-height: 48px;
 
@@ -2149,7 +2117,7 @@ iframe {
 
 .footer-logout-link
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
 
@@ -2314,14 +2282,22 @@ iframe {
     opacity: .3;
 }
 
-.footer-navigation a
+.footer-wrapper a
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 25px;
 
     letter-spacing: .2em;
     text-transform: uppercase;
+}
+
+.telephone {
+    font-family: 'open_sanslight', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+
+    color: rgb(255, 255, 255);
 }
 
 .social
@@ -2505,7 +2481,7 @@ iframe {
 
 .breadcrumbs h1
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
 
@@ -2518,7 +2494,7 @@ iframe {
 
 .breadcrumbs a
 {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
 
@@ -2553,7 +2529,7 @@ iframe {
 
 .main-container-wrapper legend
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -2565,7 +2541,7 @@ iframe {
 
 .main-container-wrapper label
 {
-    font-family: 'open_sansregular', sans-serif;
+    font-family: 'open_sansregular', Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
 
@@ -2618,7 +2594,7 @@ iframe {
 
 .main-container-search h3
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
 
@@ -2674,7 +2650,7 @@ iframe {
 
 .search-price b
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -2733,7 +2709,7 @@ iframe {
 .main-container-color label,
 .main-container-bluetooth label
 {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
 
@@ -2791,7 +2767,7 @@ iframe {
 
 .filter-item legend
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -2868,7 +2844,7 @@ iframe {
 
 .price-controls label
 {
-    font-family: 'gilroylight', sans-serif;
+    font-family: 'gilroylight', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
 
@@ -2886,7 +2862,7 @@ iframe {
 
 .price-controls input
 {
-    font-family: 'gilroylight', sans-serif;
+    font-family: 'gilroylight', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
 
@@ -2900,7 +2876,7 @@ iframe {
 
 .filter-button
 {
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -2951,7 +2927,7 @@ iframe {
 
 .main-container-sorting-criterion
 {
-    font-family: 'open_sansregular', sans-serif;
+    font-family: 'open_sansregular', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
 
@@ -3020,7 +2996,7 @@ iframe {
 
 .main-container-sorting h3
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
 
@@ -3129,7 +3105,7 @@ iframe {
 
 .new-item
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
 
@@ -3165,7 +3141,7 @@ iframe {
 
 .items-list-link h3
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
@@ -3179,7 +3155,7 @@ iframe {
 
 .items-list-link b
 {
-    font-family: 'gilroylight', sans-serif;
+    font-family: 'gilroylight', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
 
@@ -3210,11 +3186,8 @@ iframe {
 
 .user-interaction-button
 {
-    font-family: 'gilroyextrabold', sans-serif;
-    font-family: 'gilroyextrabold';
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
-    font-size: 18px;
-    line-height: 24px;
     line-height: 24px;
 
     position: relative;
@@ -3228,7 +3201,6 @@ iframe {
     padding: 0;
     padding: 8px 36px;
 
-    letter-spacing: .2em;
     letter-spacing: .2em;
     text-transform: uppercase;
 }
@@ -3260,7 +3232,7 @@ iframe {
 
 .user-interaction-match
 {
-    font-family: 'open_sanslight';
+    font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 13px;
     line-height: 36px;
 
@@ -3332,7 +3304,7 @@ iframe {
 
 .pagination button
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
 
@@ -3362,7 +3334,7 @@ iframe {
 
 .pages
 {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
 
