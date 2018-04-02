@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Магазин "Device"</title>
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/stylesheet-mini.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 
@@ -241,7 +241,7 @@
                     <h3 id="contacts">Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки. Всякое бывает.</p>
                     <img class="map-modal" src="img/images/map.jpg" width="560" height="222" alt="Адрес магазина">
-                    <a class="contacts-write-us" href="#write_us">Напишите нам</a>
+                    <a class="contacts-write-us" href="./form.html">Напишите нам</a>
                 </div>
             </section>
         </div>
@@ -251,28 +251,24 @@
         <form class="modal-pop-up" method="post" action="https://echo.htmlacademy.ru">
             <p class="write_us-name">
                 <label for="write_us-name-box">Ваше имя:</label>
-                <input id="write_us-name-box" type="text" name="write_us-user-name" placeholder="Имя Фамилия">
+                <input id="write_us-name-box" type="text" name="write_us-user-name" placeholder="Имя Фамилия" required>
             </p>
             <p class="write_us-email">
                 <label for="write_us-email-box">Ваш email:</label>
-                <input id="write_us-email-box" type="email" name="write_us-email" placeholder="email@expample.com">
+                <input id="write_us-email-box" type="email" name="write_us-email" placeholder="email@expample.com" required>
             </p>
             <p class="write_us-letter">
                 <label for="write_us-letter-box">Текст письма:</label>
-                <textarea id="write_us-letter-box" name="write_us-letter" rows="5" placeholder="В свободной форме"></textarea>
+                <textarea id="write_us-letter-box" name="write_us-letter" rows="5" placeholder="В свободной форме" required></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="modal-close" type="button">
-            <p class="visually-hidden">Закрыть</p>
-        </button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1351599076443!2d37.52798721573759!3d55.686637859559845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1522399329325"
             width="960" height="560" style="border:0" allowfullscreen></iframe>
-        <button class="map-close" type="button">
-            <p class="visually-hidden">Закрыть</p>
-        </button>
+        <button class="map-close" type="button">Закрыть</button>
     </section>
 
     <footer class="main-footer">
@@ -292,7 +288,7 @@
                     <a href="#warranty">Гарантия</a>
                     <a href="#contacts">Контакты</a>
                 </div>
-                <a href="tel:+7495495-95-95" class="telephone">Тел.: +7 (495) 495-95-95</a>
+                <a href="tel:+7-495-495-95-95" class="telephone">Тел.: +7 (495) 495-95-95</a>
             </section>
             <section class="footer-links">
                 <div class="social">
