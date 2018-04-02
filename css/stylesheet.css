@@ -170,8 +170,8 @@ a
         flex-direction: column;
 
     padding-top: 43px;
-    padding-right: 60px;
-    padding-bottom: 160px;
+    padding-right: 56px;
+    padding-bottom: 158px;
     padding-left: 60px;
 
     background-color: rgba(240,197, 46, .5);
@@ -193,9 +193,9 @@ a
     display: flex;
         flex-direction: column;
 
-    padding-top: 45px;
-    padding-right: 60px;
-    padding-bottom: 50px;
+    padding-top: 43px;
+    padding-right: 56px;
+    padding-bottom: 45px;
     padding-left: 60px;
 
     background-color: rgba(240,197, 46, .5);
@@ -368,7 +368,8 @@ a
 
 .login-link
 {
-    margin-right: 20px;
+    margin-right: 23px;
+    letter-spacing: 0.01em;
 }
 
 .logout-link
@@ -415,7 +416,7 @@ a
     margin: 0;
     margin-right: 35px;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 27px;
 
     vertical-align: top;
 }
@@ -424,7 +425,7 @@ a
 {
     position: absolute;
     top: 9px;
-    left: 10px;
+    left: 8px;
 
     width: 10px;
     height: 10px;
@@ -483,7 +484,8 @@ a
 .user_block-search::before
 {
     position: absolute;
-    top: 7px;
+    top: 8px;
+    left: 3px;
 
     width: 16px;
     height: 16px;
@@ -529,6 +531,11 @@ a
 .user_block-cart:active::before
 {
     opacity: .3;
+}
+
+.main-navigation {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .catalog
@@ -657,22 +664,14 @@ a
     text-transform: uppercase;
 }
 
-.menu-contacts
-{
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-}
-
 .menu-delivery
 {
-    margin-right: 30px;
+    margin-right: 34px;
 }
 
-.menu-warranty
-{
-    margin-right: 98px;
+.menu-warranty {
+    margin-right: 108px;
 }
-
 
 .catalog-options a:hover
 {
@@ -2116,7 +2115,7 @@ iframe
 .footer-navigation::before
 {
     position: absolute;
-    top: 120px;
+    top: 122px;
 
     width: 80px;
     height: 7px;
@@ -2156,7 +2155,7 @@ iframe
     margin: 0;
     margin-right: 18px;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 4px;
 
     vertical-align: top;
 
@@ -2169,8 +2168,8 @@ iframe
     font-size: 15px;
     line-height: 30px;
 
-    padding-top: 3px;
-    padding-right: 20px;
+    padding-top: 4px;
+    padding-right: 15px;
 
     letter-spacing: .01em;
 
@@ -2189,7 +2188,7 @@ iframe
     margin: 0;
     margin-right: 40px;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 4px;
     padding-left: 17px;
 
     vertical-align: top;
@@ -2219,8 +2218,8 @@ iframe
 .footer-login-link::after
 {
     position: absolute;
-    top: 13px;
-    left: -22px;
+    top: 12px;
+    left: -28px;
 
     width: 13px;
     height: 12px;
@@ -2303,7 +2302,7 @@ iframe
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     padding: 0;
 
     -webkit-box-align: center;
@@ -2321,7 +2320,7 @@ iframe
     margin-right: 187px;
     margin-left: 166px;
     padding: 0;
-    padding-top: 9px;
+    padding-top: 10px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2407,8 +2406,8 @@ iframe
 {
     position: absolute;
 
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
 
     content: '';
 
@@ -2421,8 +2420,8 @@ iframe
 {
     position: absolute;
 
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
 
     content: '';
 
@@ -2435,8 +2434,8 @@ iframe
 {
     position: absolute;
 
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
 
     content: '';
 
@@ -2462,7 +2461,7 @@ iframe
 .html-academy
 {
     position: absolute;
-    top: 3px;
+    top: 1px;
     bottom: 0;
     left: 625px;
 
@@ -2484,8 +2483,8 @@ iframe
 {
     position: absolute;
 
-    width: 27px;
-    height: 35px;
+    width: 29px;
+    height: 37px;
 
     content: '';
 
@@ -2502,7 +2501,7 @@ iframe
     margin: 0;
     margin-bottom: 45px;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 38px;
     padding-left: 60px;
 }
 
@@ -2560,7 +2559,7 @@ iframe
     line-height: 48px;
 
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
     padding: 0;
 
     letter-spacing: .01em;
@@ -2631,7 +2630,6 @@ iframe
 
     width: 240px;
     margin: 0;
-    margin-right: 50px;
     padding: 0;
     padding-right: 50px;
 
@@ -2682,8 +2680,8 @@ iframe
     margin: 0;
     margin-bottom: 70px;
     padding: 0;
-    padding-top: 22px;
-    padding-right: 182px;
+    padding-top: 25px;
+    padding-right: 233px;
     padding-bottom: 20px;
     padding-left: 20px;
 
@@ -2712,11 +2710,11 @@ iframe
 .filter-item::before
 {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 18px;
 
     width: 201px;
-    height: 2px;
+    height: 3px;
 
     content: '';
 
@@ -2757,7 +2755,7 @@ iframe
 .main-container-color::before
 {
     position: absolute;
-    top: 2px;
+    top: 3px;
 
     width: 201px;
     height: 2px;
@@ -2804,7 +2802,7 @@ iframe
 .main-container-bluetooth::before
 {
     position: absolute;
-    top: 2px;
+    top: 3px;
 
     width: 201px;
     height: 2px;
@@ -2833,7 +2831,7 @@ iframe
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 200px;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .filter-item legend
@@ -2926,7 +2924,8 @@ iframe
     width: 100px;
     margin: 0;
     padding: 0;
-    padding-left: 15px;
+    padding-left: 12px;
+    padding-top: 8px;
 
     vertical-align: top;
 
@@ -3033,6 +3032,7 @@ iframe
     position: relative;
 
     width: 820px;
+    padding-left: 50px;
 }
 
 .items-wrapper::after
@@ -3104,10 +3104,9 @@ iframe
             box-sizing: border-box;
     height: 70px;
     margin: 0;
-    margin-bottom: 50px;
-    margin-left: -50px;
+    margin-bottom: 45px;
     padding: 0;
-    padding-left: 70px;
+    padding-left: 23px;
 
     background-color: rgba(0, 0, 0, .08);
 
@@ -3139,6 +3138,7 @@ iframe
 {
     position: absolute;
     top: 5px;
+    left: -5px;
 
     width: 11px;
     height: 10px;
@@ -3165,6 +3165,10 @@ iframe
     background-position: 0 0;
 }
 
+.main-container-items {
+    display: flex;
+}
+
 .main-container-items-list
 {
     display: -webkit-box;
@@ -3179,15 +3183,19 @@ iframe
         flex-wrap: wrap;
 }
 
+.items-wrap {
+    display: flex;
+}
+
 .items-list
 {
     position: relative;
 
     width: 360px;
     height: 480px;
-    padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 25px;
 }
 
 .new-item
@@ -3197,8 +3205,8 @@ iframe
     line-height: 24px;
 
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 50px;
+    right: 45px;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -3364,7 +3372,7 @@ iframe
 
 .items-wrapper
 {
-    margin-bottom: 75px;
+    margin-bottom: 76px;
 }
 
 .pagination
@@ -3380,6 +3388,7 @@ iframe
     height: 70px;
     margin: 0;
     margin-left: 20px;
+    margin-top: -7px;
     padding: 0;
 
     background-color: rgba(0, 0, 0, .08);
@@ -3419,6 +3428,10 @@ iframe
     color: rgba(0, 0, 0, .3);
 }
 
+.pagination button:nth-child(1) {
+    margin-right: 210px;
+}
+
 .pages
 {
     font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -3430,8 +3443,10 @@ iframe
     display: flex;
 
     width: 90px;
-    margin: 0 auto;
+    
     padding: 0;
+    margin: 0;
+    margin-right: 198px;
 
     letter-spacing: .2em;
 
