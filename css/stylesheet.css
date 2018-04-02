@@ -66,7 +66,7 @@ body
 
     width: 1200px;
     margin: 0 auto;
-    padding-top: 480px;
+    padding-top: 0px;
     padding-right: 20px;
     padding-bottom: 180px;
     padding-left: 20px;
@@ -79,7 +79,7 @@ body
     width: 1200px;
     margin: 0 auto;
     padding-right: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     padding-left: 20px;
     
     box-sizing: border-box;
@@ -101,7 +101,7 @@ body
     margin: 0 auto;
     padding-top: 60px;
     padding-right: 20px;
-    padding-bottom: 65px;
+    padding-bottom: 45px;
     padding-left: 20px;
     
     box-sizing: border-box;
@@ -168,9 +168,9 @@ a
     display: flex;
         flex-direction: column;
 
-    padding-top: 50px;
+    padding-top: 43px;
     padding-right: 60px;
-    padding-bottom: 165px;
+    padding-bottom: 160px;
     padding-left: 60px;
 
     background-color: rgba(240,197, 46, .5);
@@ -228,7 +228,7 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 
 .user_block-search
@@ -593,7 +593,7 @@ a
 
     width: 255px;
     margin: 0;
-    margin-right: 280px;
+    margin-right: 290px;
     padding: 0;
     padding-right: 30px;
 
@@ -608,7 +608,7 @@ a
 {
     position: absolute;
     top: 3px;
-    right: 5px;
+    right: 1px;
 
     width: 16px;
     height: 16px;
@@ -645,12 +645,12 @@ a
 
 .menu-delivery
 {
-    margin-right: 35px;
+    margin-right: 30px;
 }
 
 .menu-warranty
 {
-    margin-right: 110px;
+    margin-right: 98px;
 }
 
 
@@ -700,12 +700,10 @@ a
 
 .main-container-slider
 {
-    position: absolute;
-    top: -130px;
-    left: 15px;
-
-    margin: 0;
-    padding: 0;
+    position: relative;
+    
+    margin-top: -130px;
+    margin-bottom: 108px;
 }
 
 .slide-image
@@ -717,7 +715,7 @@ a
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-width: 530px;
-    min-height: 485px;
+    min-height: 486px;
     margin-right: 30px;
     padding: 0;
 
@@ -753,8 +751,8 @@ a
 .slider-controls
 {
     position: absolute;
-    top: 380px;
-    left: 920px;
+    top: 327px;
+    left: 996px;
 
     width: 130px;
     height: 20px;
@@ -768,10 +766,10 @@ a
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 0;
     padding: 10px;
 
@@ -787,8 +785,8 @@ a
     top: 3px;
     left: 3px;
 
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
 
     content: '';
 
@@ -804,12 +802,12 @@ a
 {
     position: absolute;
     z-index: 2;
-    top: 12px;
-    left: 12px;
+    top: 7px;
+    left: 7px;
 
-    width: 4px;
-    height: 4px;
-    margin: -4px;
+    width: 2px;
+    height: 2px;
+    margin: 0px;
 
     content: '';
 
@@ -827,7 +825,7 @@ a
     display: flex;
         flex-direction: column;
 
-    max-width: 500px;
+    max-width: 510px;
     margin: 0;
     padding: 0;
     padding-top: 85px;
@@ -846,13 +844,14 @@ a
     position: absolute;
     z-index: 0;
     top: -10px;
-    right: -60px;
+    right: -35px;
 
     margin: 0;
     padding: 0;
 
     color: #fff;
     color: rgb(255, 255, 255);
+    
 }
 
 .slide-content::before
@@ -873,19 +872,22 @@ a
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 56px;
+    letter-spacing: 0.01em;
 
     z-index: 1;
 
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
     padding: 0;
 }
 
 .slide-info
 {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
     padding: 0;
+    
+    letter-spacing: 0.01em;
 }
 
 .slide-more-info
@@ -902,7 +904,7 @@ a
             box-sizing: border-box;
     max-width: 220px;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 42px;
     padding: 0;
     padding: 15px 40px;
 
@@ -941,7 +943,11 @@ a
 
 .slide-item-spec
 {
-    width: 460px;
+    max-width: 460px;
+}
+
+.slide-item-spec-value td {
+    padding-bottom: 5px;
 }
 
 
@@ -950,9 +956,13 @@ a
     font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
+    letter-spacing: 0.01em;
+    
+    text-align: left;
 
     margin: 0;
     padding: 0;
+    padding-right: 55px;
 }
 
 .main-container-slider .slide-item-spec-value
@@ -960,6 +970,9 @@ a
     font-family: 'gilroylight', Arial, sans-serif;
     font-size: 36px;
     line-height: 48px;
+    letter-spacing: 0.01em;
+    
+    text-align: left;
 
     margin: 0;
     padding: 0;
@@ -1178,10 +1191,12 @@ a
     font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+    letter-spacing: 0.01em;
 
     position: relative;
 
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 90px;
 
     background-color: rgb(229, 229, 229);
 }
@@ -1193,6 +1208,7 @@ a
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
+    letter-spacing: 0.01em;
 
     margin: 0;
     padding: 0;
@@ -1204,7 +1220,7 @@ a
     top: -25px;
 
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -1225,10 +1241,8 @@ a
         flex-direction: column;
 
     width: 280px;
-    height: 190px;
     margin: 0;
     margin-right: 120px;
-    margin-bottom: 135px;
     padding: 0;
 
     -webkit-box-orient: vertical;
@@ -1244,7 +1258,6 @@ a
     position: relative;
 
     width: 440px;
-    height: 175px;
     margin: 0;
     padding: 0;
 }
@@ -1252,8 +1265,8 @@ a
 .services-navigation::after
 {
     position: absolute;
-    top: -70px;
-    left: 280px;
+    top: -80px;
+    left: 278px;
 
     width: 7px;
     height: 319px;
@@ -1262,8 +1275,6 @@ a
 
     background-color: rgb(0, 0, 0);
 }
-
-
 
 .services-wrapper
 {
@@ -1277,6 +1288,7 @@ a
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 0.2em;
 
     position: relative;
     z-index: 0;
@@ -1288,6 +1300,7 @@ a
     padding: 0;
     padding-top: 8px;
     padding-bottom: 8px;
+    margin-bottom: 25px;
 
     cursor: pointer;
     text-align: center;
@@ -1394,7 +1407,7 @@ a
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    padding-left: 33px;
+    padding-left: 20px;
 
     content: '';
     text-align: left;
@@ -1441,7 +1454,7 @@ a
     display: flex;
 
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
     padding: 0;
 
     -webkit-box-pack: justify;
@@ -1479,9 +1492,8 @@ a
     display: flex;
 
     margin: 0;
-    margin-bottom: 90px;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 52px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1515,7 +1527,7 @@ a
 .info-contacts h3
 {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     padding: 0;
 }
 
@@ -1527,19 +1539,12 @@ a
 
     margin: 0;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .info-contacts
 {
     position: relative;
-}
-
-.info-contacts h3
-{
-    margin: 0;
-    margin-bottom: 60px;
-    padding: 0;
 }
 
 .info-contacts::before
@@ -1558,17 +1563,18 @@ a
 .info-contacts p
 {
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     padding: 0;
 }
 
 .info-contacts img
 {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .about-companys {
-    margin-bottom: 80px;
+    margin-bottom: 55px;
+    padding-top: 20px;
 }
 
 .about-companys p
@@ -1588,8 +1594,8 @@ a
 .about-companys p::before
 {
     position: absolute;
-    top: 15px;
-    left: -25px;
+    top: 17px;
+    left: -38px;
 
     width: 5px;
     height: 5px;
@@ -1618,6 +1624,10 @@ a
     margin: 0;
     padding: 0;
     padding: 8px 25px;
+    
+    min-width: 270px;
+    text-align: center;
+    box-sizing: border-box;
 
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -2041,7 +2051,7 @@ iframe {
     line-height: 48px;
 
     margin: 0;
-    margin-right: 550px;
+    margin-right: 520px;
     padding: 0;
 
     text-transform: uppercase;
@@ -2062,7 +2072,7 @@ iframe {
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 35px;
+    margin-bottom: 8px;
 
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -2092,7 +2102,7 @@ iframe {
     width: 300px;
     margin: 0;
     padding: 0;
-    padding-right: 10px;
+    padding-right: 30px;
     padding-left: 30px;
 
     -webkit-box-pack: end;
@@ -2105,12 +2115,14 @@ iframe {
     position: relative;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 18px;
     padding: 0;
+    padding-top: 3px;
 
     color: rgba(255, 255, 255, .7);
 }
@@ -2131,14 +2143,16 @@ iframe {
     position: relative;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 90px;
+    width: 100px;
     margin: 0;
     margin-right: 40px;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 17px;
+    padding-top: 3px;
 
     color: rgba(255, 255, 255, .7);
 }
@@ -2148,6 +2162,7 @@ iframe {
     position: relative;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2155,6 +2170,7 @@ iframe {
     margin: 0;
     padding: 0;
     padding-left: 20px;
+    padding-top: 3px;
 
     color: rgba(255, 255, 255, .7);
 }
@@ -2162,8 +2178,8 @@ iframe {
 .footer-login-link::after
 {
     position: absolute;
-    top: 9px;
-    left: -20px;
+    top: 13px;
+    left: -22px;
 
     width: 13px;
     height: 12px;
@@ -2178,8 +2194,8 @@ iframe {
 .footer-match::after
 {
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 14px;
+    left: 0px;
 
     width: 13px;
     height: 12px;
@@ -2194,7 +2210,7 @@ iframe {
 .footer-cart::after
 {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 0;
 
     width: 13px;
@@ -2259,12 +2275,16 @@ iframe {
     display: flex;
 
     width: 440px;
-    margin: 0 auto;
+    
     padding: 0;
+    padding-top: 9px;
+    margin-left: 166px;
+    margin-right: px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-wrapper a
@@ -2286,7 +2306,7 @@ iframe {
 {
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 24px;
 
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -2951,6 +2971,8 @@ iframe {
 .items-wrapper
 {
     position: relative;
+    
+    width: 820px;
 }
 
 .items-wrapper::after
