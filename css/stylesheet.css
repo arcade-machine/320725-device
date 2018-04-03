@@ -824,9 +824,9 @@ a
     background-color: inherit;
 }
 
-#product-selfie:checked ~ .slider-controls .slider-controls-item--selfie::before,
-#product-fitness-wristbands:checked ~ .slider-controls .slider-controls-item--fitness-wristbands::before,
-#product-quadrupter:checked ~ .slider-controls .slider-controls-item--quadrupter::before
+.controls-item-selfie:checked ~ .slider-controls .slider-controls-item--selfie::before,
+.controls-item-fitness-wristbands:checked ~ .slider-controls .slider-controls-item--fitness-wristbands::before,
+.controls-item-quadrupter:checked ~ .slider-controls .slider-controls-item--quadrupter::before
 {
     position: absolute;
     z-index: 2;
@@ -1437,7 +1437,7 @@ a
     display: none;
 }
 
-#delivery-info:checked ~ .services-navigation .services-delivery
+.services-delivery-item:checked ~ .services-navigation .services-delivery
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1451,7 +1451,7 @@ a
     background-color: rgb(0, 0, 0);
 }
 
-#warranty-info:checked ~ .services-navigation .services-warranty
+.services-warranty-item:checked ~ .services-navigation .services-warranty
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1465,7 +1465,7 @@ a
     background-color: rgb(0, 0, 0);
 }
 
-#credit-info:checked ~ .services-navigation .services-credit
+.services-credit-item:checked ~ .services-navigation .services-credit
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1933,7 +1933,8 @@ iframe
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 50px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .write_us textarea
@@ -1941,7 +1942,10 @@ iframe
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 155px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    resize: none;
 }
 
 .write_us .button
@@ -1968,7 +1972,7 @@ iframe
     text-transform: uppercase;
 
     border: none;
-    background-color: inherit;
+    background-color: transparent;
 }
 
 .write_us .button::before
@@ -2575,7 +2579,7 @@ iframe
 }
 
 .breadcrumbs a,
-.breadcrumbs p
+.breadcrumbs span
 {
     font-family: 'open_sanslight', Arial, sans-serif;
     font-size: 14px;
@@ -2584,7 +2588,7 @@ iframe
     color: rgba(0, 0, 0, .3);
 }
 
-.breadcrumbs p {
+.breadcrumbs span {
     margin: 0;
     padding: 0;
 }
@@ -3519,7 +3523,7 @@ iframe
     left: -1px;
 
     width: 30px;
-    height: 25px;
+    height: 28px;
 
     content: '';
 
@@ -3569,8 +3573,8 @@ iframe
     top: -5px;
     left: -40px;
 
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
 
     content: '';
 
