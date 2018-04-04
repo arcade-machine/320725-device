@@ -1064,13 +1064,9 @@ a
     display: flex;
     flex-wrap: wrap;
 
-    height: 240px;
     margin: 0;
     padding: 0;
 
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .popular-block
@@ -1088,6 +1084,17 @@ a
 {
     width: 160px;
     height: 240px;
+    margin-right: 40px;
+}
+
+.popular li:nth-child(6)
+{
+    margin-right: 0px;
+}
+
+.popular li:nth-child(n+7)
+{
+    margin-bottom: 40px;
 }
 
 .popular p
@@ -1193,8 +1200,8 @@ a
 .quadrupter::after
 {
     position: absolute;
-    top: 48px;
-    left: 18px;
+    top: 52px;
+    left: 14px;
 
     width: 132px;
     height: 69px;
