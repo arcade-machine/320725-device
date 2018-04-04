@@ -1084,7 +1084,7 @@ a
     margin-right: 0;
 }
 
-.popular li:nth-child(n+7n)
+.popular li:nth-child(n+7)
 {
     margin-bottom: 40px;
 }
