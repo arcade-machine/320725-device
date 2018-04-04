@@ -357,13 +357,14 @@ a
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 280px;
-
     padding-left: 25px;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
@@ -371,7 +372,6 @@ a
 .login-link
 {
     width: 140px;
-    
     margin-right: 23px;
 
     letter-spacing: .01em;
@@ -570,19 +570,21 @@ a
 
     min-width: 1160px;
     margin: 0;
-    padding-left: 60px;
     padding-top: 12px;
     padding-bottom: 40px;
+    padding-left: 60px;
 
     letter-spacing: .01em;
 
     background-color: rgb(247, 226, 150);
 }
 
-.catalog-option-list {
+.catalog-option-list
+{
+    width: 240px;
     margin: 0;
     padding: 0;
-    width: 240px;
+
     list-style: none;
 }
 
@@ -644,8 +646,7 @@ a
     color: rgba(0, 0, 0, .6);
 }
 
-.catalog-options-first-list:last-child {
-}
+
 
 
 .menu-delivery,
@@ -1052,11 +1053,12 @@ a
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .popular-block
@@ -1079,7 +1081,7 @@ a
 
 .popular li:nth-child(6n)
 {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .popular li:nth-child(n+7n)
@@ -1493,20 +1495,23 @@ a
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 
     margin: 0;
     margin-bottom: 85px;
     padding: 0;
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
-.manufacturer li {
+.manufacturer li
+{
     margin-right: 40px;
 }
 
-.manufacturer li:nth-child(4n) {
-    margin-right: 0px;
+.manufacturer li:nth-child(4n)
+{
+    margin-right: 0;
 }
 
 .manufacturer-item
@@ -1945,8 +1950,8 @@ iframe
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 50px;
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
 }
 
 .write_us textarea
@@ -1954,9 +1959,10 @@ iframe
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 155px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
     resize: none;
 }
 
@@ -2085,7 +2091,6 @@ iframe
 
 .main-footer
 {
-    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2140,11 +2145,11 @@ iframe
 .footer-navigation::before
 {
     position: absolute;
+    z-index: 1;
     bottom: -68px;
 
     width: 80px;
     height: 7px;
-    z-index: 1;
 
     content: '';
 
@@ -2336,11 +2341,13 @@ iframe
     align-items: center;
 }
 
-.footer-navigation p {
-     z-index: 2;
+.footer-navigation p
+{
+    z-index: 2;
 }
 
-.footer-navigation p:first-child {
+.footer-navigation p:first-child
+{
     width: 203px;
 }
 
@@ -2411,14 +2418,16 @@ iframe
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 
     width: 160px;
     margin-left: 510px;
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
-.social a:nth-child(n+4) {
+.social a:nth-child(n+4)
+{
     margin-top: 20px;
 }
 
@@ -2439,7 +2448,8 @@ iframe
     opacity: .3;
 }
 
-.social a:nth-child(3n) {
+.social a:nth-child(3n)
+{
     margin-right: 0;
 }
 
@@ -2499,15 +2509,16 @@ iframe
     opacity: .1;
 }
 
-.footer-links {
+.footer-links
+{
     position: relative;
 }
 
 .html-academy
 {
     position: absolute;
-    right: 2px;
     top: -3px;
+    right: 2px;
 
     width: 30px;
     height: 40px;
@@ -2552,28 +2563,35 @@ iframe
 
 .breadcrumbs-wrapper
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
-.breadcrumbs-wrapper li {
+.breadcrumbs-wrapper li
+{
     position: relative;
-    
+
     margin-right: 40px;
 }
 
 .breadcrumbs-wrapper li::before
 {
     position: absolute;
+    top: 13px;
+    right: -23px;
 
     width: 6px;
     height: 10px;
-    top: 13px;
-    right: -23px;
-    
+
     content: '';
 
     background-image: url('../img/icons/nav-arrow-icon.svg');
@@ -2581,7 +2599,8 @@ iframe
     background-position: 0 0;
 }
 
-.breadcrumbs-wrapper li:last-child::before {
+.breadcrumbs-wrapper li:last-child::before
+{
     display: none;
 }
 
@@ -2608,7 +2627,8 @@ iframe
     color: rgba(0, 0, 0, .3);
 }
 
-.breadcrumbs span {
+.breadcrumbs span
+{
     margin: 0;
     padding: 0;
 }
@@ -2668,27 +2688,23 @@ iframe
     margin: 0;
     padding: 0;
     padding-right: 45px;
-    
-    
-    background-color: rgb(239, 239, 239);
 
+    background-color: rgb(239, 239, 239);
 }
 
 .main-container-search::after
 {
     position: absolute;
+    z-index: -1;
     top: 50px;
     left: -50vw;
-    
+
     width: 50vw;
     height: 100%;
-
 
     content: '';
 
     background-color: rgb(239, 239, 239);
-    z-index: -1;
-
 }
 
 .main-container-search h3::after
@@ -2701,7 +2717,7 @@ iframe
     height: 100%;
 
     content: '';
-    
+
     background-color: rgb(220, 220, 220);
 }
 
@@ -2717,17 +2733,17 @@ iframe
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 70px;
     width: 285px;
+    height: 70px;
     margin: 0;
-    padding-left: 20px;
-    padding-top: 22px;
     margin-bottom: 70px;
-    
+    padding-top: 22px;
+    padding-left: 20px;
+
     vertical-align: top;
     letter-spacing: .2em;
     text-transform: uppercase;
-        
+
     background-color: rgb(220, 220, 220);
 
     -webkit-box-pack: center;
@@ -2748,14 +2764,14 @@ iframe
 .filter-item legend::after
 {
     position: absolute;
+    top: 0;
+    left: 16px;
 
     width: 201px;
     height: 2px;
-    left: 16px;
-    top: 0px;
 
     content: '';
-    
+
     background-color: rgb(0, 0, 0);
 }
 
@@ -2777,7 +2793,7 @@ iframe
 .main-container-color legend
 {
     position: relative;
-    
+
     margin: 0;
     padding: 0;
     padding-top: 15px;
@@ -2787,7 +2803,7 @@ iframe
 .main-container-bluetooth legend
 {
     position: relative;
-    
+
     margin: 0;
     margin-bottom: 5px;
     padding: 0;
@@ -2797,11 +2813,11 @@ iframe
 .main-container-color legend::after
 {
     position: absolute;
+    top: 5px;
+    left: 0;
 
     width: 201px;
     height: 2px;
-    left: 0px;
-    top: 5px;
 
     content: '';
 
@@ -2843,11 +2859,11 @@ iframe
 .main-container-bluetooth legend::after
 {
     position: absolute;
+    top: 4px;
+    left: 0;
 
     width: 201px;
     height: 2px;
-    left: 0px;
-    top: 4px;
 
     content: '';
 
@@ -2878,11 +2894,11 @@ iframe
 
 .filter-item legend
 {
-    position: relative;
-    
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
+
+    position: relative;
 
     padding-top: 11px;
     padding-left: 17px;
@@ -3133,10 +3149,10 @@ iframe
 
     display: inline-block;
 
+    width: 145px;
     margin: 0;
     margin-right: 55px;
     padding: 0;
-    width: 145px;
 
     vertical-align: top;
     letter-spacing: .2em;
@@ -3146,24 +3162,24 @@ iframe
 .main-container-sorting
 {
     position: relative;
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
         flex-direction: row;
-    flex-wrap: wrap;
 
-    
     margin: 0;
     margin-bottom: 45px;
     margin-left: -50px;
     padding: 0;
-    padding-left: 73px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 73px;
 
     background-color: rgb(239, 239, 239);
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -3440,7 +3456,6 @@ iframe
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -3452,6 +3467,8 @@ iframe
 
     background-color: rgba(0, 0, 0, .08);
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .pagination button
@@ -3464,8 +3481,8 @@ iframe
     margin: 0;
     padding: 0;
     padding-top: 23px;
-    padding-bottom: 23px;
     padding-right: 30px;
+    padding-bottom: 23px;
     padding-left: 30px;
 
     letter-spacing: .2em;
@@ -3627,12 +3644,14 @@ iframe
     opacity: .6;
 }
 
-.current {
-    color: (0, 0, 0);
+.current
+{
     opacity: 1.0;
+    color: rgb(0, 0, 0);
 }
 
-.current a{
-    color: (0, 0, 0);
+.current a
+{
     opacity: 1.0;
+    color: rgb(0, 0, 0);
 }
